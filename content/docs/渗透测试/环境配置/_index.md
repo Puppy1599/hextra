@@ -1,6 +1,7 @@
 ---
 title: "环境配置"
 type: docs
+draft: false
 weight: 1
 sidebar:
   open: false
