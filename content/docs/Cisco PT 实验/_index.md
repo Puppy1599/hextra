@@ -1,7 +1,6 @@
 ---
 title: "Cisco PT 实验"
 type: docs
-draft: false
 weight: 
 sidebar:
   open: false
