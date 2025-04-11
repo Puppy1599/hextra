@@ -1,0 +1,75 @@
+baseURL: https://example.org/
+languageCode: zh-CN
+title: My New Hugo Site
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+markup:
+  # allow raw html
+  goldmark:
+    renderer:
+      # true: 允许直接在 Markdown 中嵌入 HTML 代码（如 <div>、<script>、<iframe> 等），而不会被 Hugo 转义或移除
+      unsafe: true
+
+  # enable hextra syntax highlight
+  highlight:
+    # true: 默认值，不使用 CSS 类，而是直接在 HTML 代码中内联 style 进行高亮
+    # false: 使用 CSS 类进行代码高亮，而不是直接在 HTML 中写 style
+    noClasses: false
+
+menu:
+  main:
+    - name: 文档
+      pageRef: /docs
+      weight: 1
+    - name: 博客
+      pageRef: /blog
+      weight: 2
+    - name: 关于
+      pageRef: /about
+      weight: 3
+    - name: 搜索
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/Puppy1599"
+      params:
+        icon: github
+#    - name: Twitter
+#      weight: 6
+#      url: "https://twitter.com/"
+#      params:
+#        icon: x-twitter
+  sidebar:
+    - name: 更多
+      params:
+        type: separator
+      weight: 1
+    - name: "关于"
+      pageRef: "/about"
+      weight: 2
+    - name: "Hugo 文档 ↗"
+      url: "https://gohugo.io/documentation/"
+      weight: 3
+
+params:
+  theme:
+    # light | dark | system
+    default: light
+    displayToggle: false
+
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
+
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: true
+    width: normal
