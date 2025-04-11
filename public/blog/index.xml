@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site – 博客</title>
+    <title>摸鱼小窝 – 博客</title>
     <link>http://localhost:1313/blog/</link>
-    <description>Recent content in 博客 on My New Hugo Site</description>
+    <description>Recent content in 博客 on 摸鱼小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     

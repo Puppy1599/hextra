@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site – Cisco PT 实验</title>
+    <title>摸鱼小窝 – Cisco PT 实验</title>
     <link>http://localhost:1313/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/</link>
-    <description>Recent content in Cisco PT 实验 on My New Hugo Site</description>
+    <description>Recent content in Cisco PT 实验 on 摸鱼小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Tue, 08 Apr 2025 15:42:07 +0800</lastBuildDate>

@@ -1,6 +1,6 @@
 baseURL: https://example.org/
 languageCode: zh-CN
-title: My New Hugo Site
+title: 摸鱼小窝
 
 module:
   imports:
