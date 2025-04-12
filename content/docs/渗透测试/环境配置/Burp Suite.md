@@ -52,17 +52,17 @@ description: ""
   > [!WARNING]
   > 由于涉及到版权问题，该软件请在 Github 或 Bing 等网站自行搜索下载，仅供学习和交流使用，商业使用请购买正版软件！
 
-- 将下载的 Burp Suite 和 BurpLoaderKeygen 放在任意指定的目录<br>（以 D:\Program Files\burpsuite_pro 为例）
+- 将下载的 Burp Suite 和 BurpLoaderKeygen 放在任意指定的目录（以 D:\Program Files\burpsuite_pro 为例）
 
   ![](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744384976457.39ld9n27sq.webp)
 
-- 启动 BurpLoaderKeygen 加载器
+- 启动 BurpLoaderKeygen 加载器（在 D:\Program Files\burpsuite_pro 目录）
 
   ```powershell
   java -jar BurpLoaderKeygen.jar
   ```
 
-  ![](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744386519216.60ufhpobuf.webp)
+  ![](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744472686180.5mnzs91e6k.webp)
 
 - 配置 BurpLoaderKeygen 加载器
   - 勾选 `Auto Run`，下次打开 BurpLoaderKeygen 时会自动运行 Burp Suite

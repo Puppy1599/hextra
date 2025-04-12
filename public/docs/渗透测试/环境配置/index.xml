@@ -96,11 +96,11 @@
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;将下载的 Burp Suite 和 BurpLoaderKeygen 放在任意指定的目录&lt;br&gt;（以 D:\Program Files\burpsuite_pro 为例）&lt;/p&gt;
+&lt;p&gt;将下载的 Burp Suite 和 BurpLoaderKeygen 放在任意指定的目录（以 D:\Program Files\burpsuite_pro 为例）&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744384976457.39ld9n27sq.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;启动 BurpLoaderKeygen 加载器&lt;/p&gt;
+&lt;p&gt;启动 BurpLoaderKeygen 加载器（在 D:\Program Files\burpsuite_pro 目录）&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
 
 &lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;java&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-jar&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BurpLoaderKeygen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;jar&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
@@ -113,7 +113,7 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744386519216.60ufhpobuf.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744472686180.5mnzs91e6k.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;配置 BurpLoaderKeygen 加载器&lt;/p&gt;
