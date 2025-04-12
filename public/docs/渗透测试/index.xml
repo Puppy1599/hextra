@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>摸鱼小窝 – 渗透测试</title>
-    <link>https://example.org/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</link>
+    <link>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/</link>
     <description>Recent content in 渗透测试 on 摸鱼小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 11 Apr 2025 20:39:46 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 12 Apr 2025 12:03:54 +0800</lastBuildDate>
     
-	  <atom:link href="https://example.org/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,14 +17,28 @@
     
     <item>
       <title>环境配置</title>
-      <link>https://example.org/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <link>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Fri, 11 Apr 2025 20:39:46 +0800</pubDate>
       
-      <guid>https://example.org/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <guid>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
       <description>
         
         
         &lt;p&gt;这是 &lt;code&gt;环境配置&lt;/code&gt; 部分的概述内容&amp;hellip;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>渗透测试</title>
+      <link>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/</link>
+      <pubDate>Sat, 12 Apr 2025 12:03:54 +0800</pubDate>
+      
+      <guid>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/</guid>
+      <description>
+        
+        
+        &lt;p&gt;这是 &lt;code&gt;渗透测试&lt;/code&gt; 部分的概述内容&amp;hellip;&lt;/p&gt;
 
       </description>
     </item>
