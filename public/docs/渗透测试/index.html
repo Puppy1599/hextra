@@ -12,7 +12,7 @@
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>渗透测试 – 摸鱼小窝</title>
   <meta name="description" content="这是 渗透测试 部分的概述内容…
-待完成内容：闭合方式判断、Cookie、base64、user-agent、refer 进行sql注入我需要获取user()还是current_user() file_priv hosts文件目录和作用 一句话木马" /><link rel="canonical" href="http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/" itemprop="url" />
+SQL 注入环境配置待完成内容：闭合方式判断、Cookie、base64、user-agent、refer 进行sql注入我需要获取user()还是current_user() file_priv hosts文件目录和作用 一句话木马" /><link rel="canonical" href="http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/" itemprop="url" />
 
 <meta property="og:title" content="渗透测试" />
 <meta property="og:description" content="" />
@@ -21,14 +21,14 @@
 
   <meta itemprop="name" content="渗透测试">
   <meta itemprop="description" content="这是 渗透测试 部分的概述内容…
-待完成内容：闭合方式判断、Cookie、base64、user-agent、refer 进行sql注入我需要获取user()还是current_user() file_priv hosts文件目录和作用 一句话木马">
+SQL 注入环境配置待完成内容：闭合方式判断、Cookie、base64、user-agent、refer 进行sql注入我需要获取user()还是current_user() file_priv hosts文件目录和作用 一句话木马">
   <meta itemprop="datePublished" content="2025-04-12T12:03:54+08:00">
   <meta itemprop="dateModified" content="2025-04-12T12:03:54+08:00">
-  <meta itemprop="wordCount" content="8">
+  <meta itemprop="wordCount" content="11">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="渗透测试">
   <meta name="twitter:description" content="这是 渗透测试 部分的概述内容…
-待完成内容：闭合方式判断、Cookie、base64、user-agent、refer 进行sql注入我需要获取user()还是current_user() file_priv hosts文件目录和作用 一句话木马">
+SQL 注入环境配置待完成内容：闭合方式判断、Cookie、base64、user-agent、refer 进行sql注入我需要获取user()还是current_user() file_priv hosts文件目录和作用 一句话木马">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -115,10 +115,7 @@
   </div>
 </div>
 
-          <a class="hx-p-2 hx-text-current" target="_blank" rel="noreferrer" href="https://github.com/Puppy1599" title="GitHub"><svg height=24 fill="currentColor" viewBox="3 3 18 18">
-  <path d="M12 3C7.0275 3 3 7.12937 3 12.2276C3 16.3109 5.57625 19.7597 9.15374 20.9824C9.60374 21.0631 9.77249 20.7863 9.77249 20.5441C9.77249 20.3249 9.76125 19.5982 9.76125 18.8254C7.5 19.2522 6.915 18.2602 6.735 17.7412C6.63375 17.4759 6.19499 16.6569 5.8125 16.4378C5.4975 16.2647 5.0475 15.838 5.80124 15.8264C6.51 15.8149 7.01625 16.4954 7.18499 16.7723C7.99499 18.1679 9.28875 17.7758 9.80625 17.5335C9.885 16.9337 10.1212 16.53 10.38 16.2993C8.3775 16.0687 6.285 15.2728 6.285 11.7432C6.285 10.7397 6.63375 9.9092 7.20749 9.26326C7.1175 9.03257 6.8025 8.08674 7.2975 6.81794C7.2975 6.81794 8.05125 6.57571 9.77249 7.76377C10.4925 7.55615 11.2575 7.45234 12.0225 7.45234C12.7875 7.45234 13.5525 7.55615 14.2725 7.76377C15.9937 6.56418 16.7475 6.81794 16.7475 6.81794C17.2424 8.08674 16.9275 9.03257 16.8375 9.26326C17.4113 9.9092 17.76 10.7281 17.76 11.7432C17.76 15.2843 15.6563 16.0687 13.6537 16.2993C13.98 16.5877 14.2613 17.1414 14.2613 18.0065C14.2613 19.2407 14.25 20.2326 14.25 20.5441C14.25 20.7863 14.4188 21.0746 14.8688 20.9824C16.6554 20.364 18.2079 19.1866 19.3078 17.6162C20.4077 16.0457 20.9995 14.1611 21 12.2276C21 7.12937 16.9725 3 12 3Z"></path>
-</svg>
-<span class="hx-sr-only">GitHub</span>
+          <a class="hx-p-2 hx-text-current" target="_blank" rel="noreferrer" href="https://github.com/Puppy1599" title="GitHub"><svg height=24 xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg><span class="hx-sr-only">GitHub</span>
           </a><button type="button" aria-label="Menu" class="hamburger-menu -hx-mr-2 hx-rounded hx-p-2 active:hx-bg-gray-400/20 md:hx-hidden"><svg height=24 fill="none" viewBox="0 0 24 24" stroke="currentColor"><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8H20"></path></g><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16H20"></path></g></svg></button>
   </nav>
 </div>
@@ -201,6 +198,109 @@
     
   >About
     </a></li>
+          <li class="open"><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/docs/"
+    
+  >文档
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
+    </a><div class="ltr:hx-pr-0 hx-overflow-hidden">
+        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col open"><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      sidebar-active-item hx-bg-primary-100 hx-font-semibold hx-text-primary-800 contrast-more:hx-border contrast-more:hx-border-primary-500 dark:hx-bg-primary-400/10 dark:hx-text-primary-600 contrast-more:dark:hx-border-primary-500"
+    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"
+    
+  >渗透测试
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
+    </a>
+  
+              <div class="ltr:hx-pr-0 hx-overflow-hidden">
+        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"
+    
+  >环境配置
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
+    </a>
+              <div class="ltr:hx-pr-0 hx-overflow-hidden">
+        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/%E9%9D%B6%E5%9C%BA%E9%83%A8%E7%BD%B2/"
+    
+  >靶场部署
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/burp-suite/"
+    
+  >Burp Suite
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95/"
+    
+  >浏览器扩展
+    </a>
+              
+            </li></ul>
+      </div>
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/"
+    
+  >SQL 注入
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
+    </a>
+              <div class="ltr:hx-pr-0 hx-overflow-hidden">
+        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/"
+    
+  >基本流程
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div>
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/"
+    
+  >Cisco PT 实验
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
+    </a>
+              <div class="ltr:hx-pr-0 hx-overflow-hidden">
+        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/vlan-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/"
+    
+  >VLAN 基础配置
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/%E8%B7%A8-vlan-%E9%80%9A%E4%BF%A1/"
+    
+  >跨 VLAN 通信
+    </a>
+              
+            </li></ul>
+      </div>
+            </li></ul>
+      </div></li>
       <li class="[word-break:break-word] hx-mt-5 hx-mb-2 hx-px-2 hx-py-1.5 hx-text-sm hx-font-semibold hx-text-gray-900 first:hx-mt-0 dark:hx-text-gray-100">
         <span class="hx-cursor-default">更多</span>
       </li>
@@ -352,13 +452,22 @@
         
   <div class="hx-mt-1.5 hx-flex hx-items-center hx-gap-1 hx-overflow-hidden hx-text-sm hx-text-gray-500 dark:hx-text-gray-400 contrast-more:hx-text-current">
         <div class="hx-whitespace-nowrap hx-transition-colors hx-min-w-[24px] hx-overflow-hidden hx-text-ellipsis hover:hx-text-gray-900 dark:hover:hx-text-gray-100">
-          <a href="">Docs</a>
+          <a href="/docs/">文档</a>
         </div><svg class="hx-w-3.5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx-whitespace-nowrap hx-transition-colors hx-font-medium hx-text-gray-700 contrast-more:hx-font-bold contrast-more:hx-text-current dark:hx-text-gray-100 contrast-more:dark:hx-text-current">渗透测试</div>
   </div>
 
         <div class="content">
           <h1>渗透测试</h1>
           <p>这是 <code>渗透测试</code> 部分的概述内容&hellip;</p>
+<div class="hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose" style="--hextra-cards-grid-cols: 3;">
+<a
+  class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="sql-%e6%b3%a8%e5%85%a5"
+    ><span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50"><svg t="1744542009325" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5843" width="24" height="24"><path d="M446.8 365c210.9 0 382-57 382-146.9S657.7 71.2 446.8 71.2s-382 57-382 146.9S235.9 365 446.8 365z m0-58.8c-91.8 0-177.6-12.1-240.1-32.9-54.8-18.2-83.2-40.7-83.2-55.2 0-14.6 28.4-37 83.2-55.2C269.3 142.1 355 130 446.8 130c91.8 0 177.6 12.1 240.1 32.9 54.8 18.2 83.2 40.7 83.2 55.2 0 14.6-28.4 37-83.2 55.2-62.6 20.8-148.3 32.9-240.1 32.9z m0 0" fill="#409EFF" p-id="5844"></path><path d="M94.2 188.7c14.2 0 26.4 10.1 28.9 24.1l0.5 5.3v176.3c0 14.6 28.4 37 83.2 55.2 6.2 2.1 12.6 4.1 19.3 5.9-7.8 14.3-12.5 30.1-13.9 46.3l-0.4 10.1v0.9c-34.7-9.8-64.6-22-88.2-36.3v94.1c0 14.6 28.4 37 83.2 55.2l5 1.5V689c-34.7-9.8-64.6-21.9-88.2-36.2v152.9c0 14.6 28.4 37 83.2 55.2 62.5 21 148.2 33.1 240 33.1 91.8 0 177.6-12.1 240.1-32.9 51.1-17 79.3-37.7 82.8-52.3l0.3-3h58.8v26.4c0 16.2-13.2 29.4-29.4 29.4l4.9-0.4c-54.5 57.2-194.1 91.5-357.5 91.5s-303-34.3-357.5-91.5c-12.2-2-21.8-11.5-24-23.6l-0.5-5.3V218.1c0-16.3 13.1-29.4 29.4-29.4z m675.9 29.4c0-15.2 11.6-27.9 26.7-29.3 15.2-1.4 28.9 9.1 31.6 24l0.5 5.3v176.3c0 16.2-13.2 29.4-29.4 29.4s-29.4-13.2-29.4-29.4V218.1z m0 0" fill="#409EFF" p-id="5845"></path><path d="M270.5 659.4l56.2-11.5c4.6 35.2 23.7 52.8 57.4 52.8 25.3-0.8 38.6-11.1 40.1-31 0.8-13.8-8.1-24.5-26.4-32.2-16.4-6.1-33.3-10.7-50.5-13.8-46.7-10-69.2-34.4-67.7-73.5 4.6-42.1 35.6-64.6 93-67.8 60.5-1.5 95.7 22.2 105.6 71.2L422 564.1c-3.8-24.5-19.5-36.7-47-36.7-22.2 0.8-34.1 8.8-35.6 24.1-1.5 13.8 13.4 24.1 44.8 31 24.4 5.4 44.4 12.3 59.7 20.7 26.8 15.3 40.6 36.7 41.3 64.3-2.3 49-35.6 74.2-99.9 75.8-64.3 0.7-102.6-27.2-114.8-83.9z m396.3 78l59.7 57.4-63.2 18.3-55.1-71.1c-70.4-11.5-107.1-54.4-110.2-128.6 3.8-83.5 46.3-127.1 127.4-130.9 77.3 4.6 118.6 48.2 124 130.9-1.5 63.6-29.1 104.9-82.6 124z m20.7-124c-1.6-52.8-23-80.3-64.3-82.6-41.3 3.1-63.1 30.6-65.5 82.7 1.6 52 23.4 79.6 65.5 82.6 41.3-1.5 62.7-29.1 64.3-82.7z m272.3 125.2H772.7V486.1h57.4v207.8h129.7v44.7z m0 0" fill="#409EFF" p-id="5846"></path></svg>SQL 注入</span></a>
+<a
+  class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="%e7%8e%af%e5%a2%83%e9%85%8d%e7%bd%ae"
+    ><span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50"><svg t="1744542120386" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7019" width="24" height="24"><path d="M1016.8832 526.592c-3.9936-20.7872-16.7936-34.2016-32.6656-34.2016h-3.4816c-45.9264 0-83.3024-36.864-83.3024-82.2272 0-14.7456 7.168-31.232 7.2704-31.3856a42.8544 42.8544 0 0 0-14.7456-52.224l-1.024-0.6656-84.3776-46.336-1.0752-0.4608a48.64 48.64 0 0 0-52.224 10.24c-9.2672 9.472-41.216 36.4032-65.792 36.4032-24.7808 0-56.9344-27.4432-66.2528-37.0688a48.64 48.64 0 0 0-52.224-10.7008l-1.024 0.512-87.4496 47.36-1.024 0.7168a42.8032 42.8032 0 0 0-14.848 52.1728c0.1024 0.1536 7.3216 16.5888 7.3216 31.4368 0 45.3632-37.376 82.2784-83.3024 82.2784h-3.4816c-15.872 0-28.672 13.3632-32.6656 34.1504-0.3072 1.536-7.1168 37.5808-7.1168 65.8432 0 28.2112 6.8096 64.3072 7.1168 65.8432 3.9936 20.736 16.7936 34.1504 32.6656 34.1504a18.432 18.432 0 0 0 0.512 0h2.9696c45.9264 0 83.3024 36.864 83.3024 82.2784 0 14.7456-7.168 31.232-7.2704 31.3856a42.9056 42.9056 0 0 0 14.6944 52.224l1.024 0.6656 82.7904 45.7216 1.024 0.4608a47.8208 47.8208 0 0 0 52.4288-10.8544c11.776-12.6464 43.7248-38.7072 67.2768-38.7072 25.5488 0 58.2656 29.2352 67.6864 39.424 8.448 9.216 21.504 14.7456 34.816 14.7456h0.0512a44.4416 44.4416 0 0 0 17.5104-3.4816l1.0752-0.4608 85.8624-46.848 1.024-0.7168a42.8032 42.8032 0 0 0 14.7456-52.1216c0-0.1536-7.2704-16.7936-7.2704-31.4368 0-45.3632 37.376-82.2784 83.3024-82.2784h3.3792c15.9744 0 28.7744-13.4144 32.768-34.1504 0.0512-0.3584 7.1168-36.9152 7.1168-65.8432 0-28.3648-6.8096-64.3584-7.1168-65.8432zM580.608 861.184l-72.448-39.9872c3.1744-8.0896 9.6768-26.9824 9.6768-46.5408 0-67.84-52.8896-123.9552-120.9856-129.1264a354.7136 354.7136 0 0 1-5.5808-53.1456c0-19.0464 3.9424-43.5712 5.632-53.1456 68.096-5.1712 120.9344-61.2864 120.9344-129.1264 0-19.5072-6.4512-38.4-9.6768-46.4896l77.1072-41.7792c2.7648 2.7648 13.9264 13.6704 29.2352 24.4736 25.088 17.664 48.9984 26.624 71.0144 26.624 21.8112 0 45.5168-8.7552 70.4-26.112 15.2576-10.5984 26.3168-21.248 29.1328-24.064l74.2912 40.8064c-3.1744 8.0896-9.6768 26.9824-9.6768 46.5408 0 67.84 52.8896 123.904 120.9856 129.1264 1.6384 9.5744 5.5808 34.1504 5.5808 53.1456 0 19.0464-3.8912 43.5712-5.5808 53.1456-68.096 5.12-120.9856 61.2864-120.9856 129.1264 0 19.5072 6.5024 38.4 9.6768 46.4896l-75.264 41.0624a232.6528 232.6528 0 0 0-29.3376-25.6c-25.6-18.7904-50.0224-28.2624-72.704-28.2624-22.528 0-46.7968 9.3184-72.192 27.6992a234.5984 234.5984 0 0 0-29.2352 25.1392z m222.208-269.2608c0-65.6384-54.0672-119.04-120.5248-119.04s-120.5248 53.4016-120.5248 119.04c0 65.6384 54.0672 119.04 120.5248 119.04s120.5248-53.4016 120.5248-119.04z m-120.5248-71.7824c40.0896 0 72.704 32.2048 72.704 71.7824 0 39.6288-32.6144 71.8336-72.704 71.8336-40.0896 0-72.704-32.256-72.704-71.8336s32.6144-71.7824 72.704-71.7824zM858.112 102.4v64.0512H0V102.4zM315.392 460.8v64.0512H0V460.8zM366.5408 819.2v64.0512H0V819.2z" fill="#595959" p-id="7020"></path></svg>环境配置</span></a>
+</div>
+
 <p>待完成内容：闭合方式判断、Cookie、base64、user-agent、refer
 进行sql注入我需要获取user()还是current_user()
 file_priv

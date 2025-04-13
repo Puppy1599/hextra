@@ -1,7 +1,7 @@
 ---
 title: 'Burp Suite'
 date: '2025-04-11T19:06:08+08:00'
-weight: 2
+weight: 3
 draft: false
 description: ""
 ---

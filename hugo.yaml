@@ -26,19 +26,19 @@ menu:
       weight: 1
     - name: 博客
       pageRef: /blog
-      weight: 3
+      weight: 2
     - name: 关于
       pageRef: /about
-      weight: 4
+      weight: 3
     - name: 搜索
-      weight: 5
+      weight: 4
       params:
         type: search
     - name: GitHub
-      weight: 6
+      weight: 5
       url: "https://github.com/Puppy1599"
       params:
-        icon: github
+        icon: github-customer
 #    - name: Twitter
 #      weight: 6
 #      url: "https://twitter.com/"
