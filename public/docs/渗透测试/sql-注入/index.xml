@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>摸鱼小窝 – SQL 注入</title>
-    <link>https://example.org/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/</link>
+    <link>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/</link>
     <description>Recent content in SQL 注入 on 摸鱼小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Sat, 12 Apr 2025 12:03:54 +0800</lastBuildDate>
     
-	  <atom:link href="https://example.org/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,10 +17,10 @@
     
     <item>
       <title>基本流程</title>
-      <link>https://example.org/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/</link>
+      <link>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/</link>
       <pubDate>Sat, 12 Apr 2025 12:03:54 +0800</pubDate>
       
-      <guid>https://example.org/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/</guid>
+      <guid>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/</guid>
       <description>
         
         
