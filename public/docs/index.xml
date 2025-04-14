@@ -37,7 +37,141 @@
       <description>
         
         
-        
+        &lt;h3&gt;一、sqli-labs&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;一sqli-labs&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e4%b8%80sqli-labs&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;1、安装 phpStudy&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;1安装-phpstudy&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1%e5%ae%89%e8%a3%85-phpstudy&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;根据自己的操作系统下载 32 位 或 64 位版本（一般是 64 位），下载链接：&lt;a href=&#34;https://www.xp.cn/php-study&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;phpStudy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744544906178.102csr2or4.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-amber-200 hx-bg-amber-100 hx-text-amber-900 dark:hx-border-amber-200/30 dark:hx-bg-amber-900/30 dark:hx-text-amber-200&#34;&gt;
+  &lt;p class=&#34;hx-flex hx-items-center hx-font-medium&#34;&gt;&lt;svg height=16px class=&#34;hx-inline-block hx-align-middle hx-mr-2&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;Warning&lt;/p&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;&lt;p&gt;将 phpStudy 安装到 C:\phpstudy_pro（自定义安装目录时注意路径中不能出现空格）&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h4&gt;2、下载 sqli-labs&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;2下载-sqli-labs&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2%e4%b8%8b%e8%bd%bd-sqli-labs&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;使用 git 克隆项目，项目地址：&lt;a href=&#34;https://github.com/Audi-1/sqli-labs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;sqli-labs&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git clone https://github.com/Audi-1/sqli-labs.git sqli-labs&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744547730503.6ikh8y5nxx.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h4&gt;3、配置 sqli-labs&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;3配置-sqli-labs&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3%e9%85%8d%e7%bd%ae-sqli-labs&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;启动 phpStudy 的 Web 服务&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744550894217.7w70d169wp.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除 phpStudy 的默认网站&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744550650777.7phb41byw.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 phpStudy 中新建网站&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;域名：localhost&lt;/li&gt;
+&lt;li&gt;PHP版本：php5.3.29nts（需要安装）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744552353001.9nzz7ykx6t.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744552405153.4joaiom1tn.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744552469427.lvx20cf08.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200&#34;&gt;
+  &lt;p class=&#34;hx-flex hx-items-center hx-font-medium&#34;&gt;&lt;svg height=16px class=&#34;hx-inline-block hx-align-middle hx-mr-2&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;Note&lt;/p&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;&lt;p&gt;这里选择 php5.3.29nts 版本是因为 sqli-labs 是一个比较老的项目，使用的部分 php 代码在新版本中可能不支持或已被移除。&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改数据库 root 密码&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744551071044.9dd5esecfv.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开 localhost 网站根目录&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744551483453.92qbln7xil.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在根目录中新建 index.php 文件并添加以下内容（便于后续部署多个靶场）&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;?&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;php&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;header&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;Content-Type: text/html; charset=utf-8&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// 允许显示的目录
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$allowed_dirs&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;array&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;sqli-labs&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;h4&amp;gt;靶场目录&amp;lt;/h4&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;ul&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;foreach&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$allowed_dirs&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$dir&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;is_dir&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$dir&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#39;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;$dir&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/&amp;#39;&amp;gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;ucfirst&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$dir&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;lt;/ul&amp;gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200&#34;&gt;
+  &lt;p class=&#34;hx-flex hx-items-center hx-font-medium&#34;&gt;&lt;svg height=16px class=&#34;hx-inline-block hx-align-middle hx-mr-2&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;Note&lt;/p&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;&lt;p&gt;&lt;code&gt;$allowed_dirs = array(&#39;sqli-labs&#39;);&lt;/code&gt; 这里的 &lt;code&gt;&#39;sqli-labs&#39;&lt;/code&gt; 是靶场的目录名，可以根据实际情况添加或修改，多个目录名之间使用半角逗号 &lt;code&gt;,&lt;/code&gt; 进行分隔。&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744619592764.2ks3tggwkr.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将下载的 sqli-labs 复制到网站根目录&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744551728150.6wqwzvlcww.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改 &lt;code&gt;sqli-labs\sql-connections\db-creds.inc&lt;/code&gt; 数据库连接配置文件&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;$dbuser=&#39;root&#39;&lt;/code&gt;：使用 root 用户&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;$dbpass=&#39;123456&#39;&lt;/code&gt;：修改过后的 root 用户的密码&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744554583500.7phb6dod0.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 IP 地址访问靶场目录中的 sqli-labs&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744552102917.45hurt7axw.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装 / 初始化 sqli-labs&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744552153148.58hk2p4962.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;显示如下信息表示安装成功&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744554663138.51ec7azv6k.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;使用 sqli-labs 进行 SQL 注入的学习&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744554741444.3d4za4b89k.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
       </description>
     </item>
     
@@ -433,171 +567,6 @@
 &lt;li&gt;查看当前配置为 Trunk 的端口及其详细信息
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;show interfaces trunk&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Burp Suite</title>
-      <link>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/burp-suite/</link>
-      <pubDate>Fri, 11 Apr 2025 19:06:08 +0800</pubDate>
-      
-      <guid>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/burp-suite/</guid>
-      <description>
-        
-        
-        &lt;h3&gt;一、Java 环境的配置&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;一java-环境的配置&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#%e4%b8%80java-%e7%8e%af%e5%a2%83%e7%9a%84%e9%85%8d%e7%bd%ae&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200&#34;&gt;
-  &lt;p class=&#34;hx-flex hx-items-center hx-font-medium&#34;&gt;&lt;svg height=16px class=&#34;hx-inline-block hx-align-middle hx-mr-2&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;Note&lt;/p&gt;
-
-  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
-    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;&lt;p&gt;Burp Suite 是一个基于 Java 开发的应用程序，因此需要配置 Java 环境来执行其代码。&lt;/p&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;下载链接：&lt;a href=&#34;https://www.oracle.com/cn/java/technologies/downloads/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Oracle Java&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;下载 Windows 版本的 JDK&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/image.9nzz4z8iki.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;将 JDK 的压缩包解压到任意指定的目录（以 D:\Program Files\Java 为例）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744372720740.4joafpmxa8.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744372788610.3gol4tseha.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;配置环境变量&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;新建系统变量 &lt;code&gt;JAVA_HOME&lt;/code&gt; （以 D:\Program Files\Java\jdk-24 为例）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744373044169.77dqq2mugh.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;编辑系统环境变量 Path，添加 &lt;code&gt;%JAVA_HOME%\bin&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744373101150.45vagilgq.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;验证 Java 环境&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;java -version&lt;/code&gt; 检查 Java 版本&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;javac -version&lt;/code&gt; 检查 Java 编译器版本&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744376999793.6m433u99tk.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;二、Burp Suite 的安装&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;二burp-suite-的安装&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#%e4%ba%8cburp-suite-%e7%9a%84%e5%ae%89%e8%a3%85&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;下载链接：&lt;a href=&#34;https://portswigger.net/burp/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Burp Suite&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;下载 JAR 版本的 Burp Suite&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744378175830.51ec4dx3mn.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;下载 BurpLoaderKeygen&lt;/p&gt;
-&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-amber-200 hx-bg-amber-100 hx-text-amber-900 dark:hx-border-amber-200/30 dark:hx-bg-amber-900/30 dark:hx-text-amber-200&#34;&gt;
-  &lt;p class=&#34;hx-flex hx-items-center hx-font-medium&#34;&gt;&lt;svg height=16px class=&#34;hx-inline-block hx-align-middle hx-mr-2&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;Warning&lt;/p&gt;
-
-  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
-    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;&lt;p&gt;由于涉及到版权问题，该软件请在 Github 或 Bing 等网站自行搜索下载，仅供学习和交流使用，商业使用请购买正版软件！&lt;/p&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;将下载的 Burp Suite 和 BurpLoaderKeygen 放在任意指定的目录（以 D:\Program Files\burpsuite_pro 为例）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744384976457.39ld9n27sq.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;启动 BurpLoaderKeygen 加载器（在 D:\Program Files\burpsuite_pro 目录）&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;java&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-jar&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BurpLoaderKeygen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;jar&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
-    title=&#34;Copy code&#34;
-  &gt;
-    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
-    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744472686180.5mnzs91e6k.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;配置 BurpLoaderKeygen 加载器&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;勾选 &lt;code&gt;Auto Run&lt;/code&gt;，下次打开 BurpLoaderKeygen 时会自动运行 Burp Suite&lt;/li&gt;
-&lt;li&gt;任意修改 &lt;code&gt;License Text&lt;/code&gt;（可选，以 licensed to Hailo 为例）&lt;/li&gt;
-&lt;li&gt;复制 License 的内容&lt;/li&gt;
-&lt;li&gt;点击 Run 运行 Burp Suite&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744385165274.5xatjzv94r.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;激活 Burp Suite&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;点击 Next 跳过 License Agreement&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744382589175.b9365fhad.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;将之前复制 License 的内容粘贴到 License Key&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744385245782.5j4dt4my9p.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;选择手动激活 Manual activation&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744385266254.3k872shfy6.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;复制 request&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744385287177.8z6pl7wlbz.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;粘贴到 BurpLoaderKeygen 的 Activation Request 并复制 Activation Response&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744385313072.9gwr9sxyww.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;粘贴到 Burp Suite 的 response&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744389817132.102cq6qp1a.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;成功激活&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744385332124.8adg1792bl.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;优化 Burp Suite 的启动&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;新建 &lt;code&gt;burpsuite.bat&lt;/code&gt; 文件并放到 Burp Suite 的同级目录下&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
-
-&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\Program Files\burpsuite_pro\BurpLoaderKeygen.jar&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
-    title=&#34;Copy code&#34;
-  &gt;
-    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
-    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744386453453.2yyjghmzna.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;将 &lt;code&gt;D:\Program Files\burpsuite_pro&lt;/code&gt; 添加到系统环境变量&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744386152557.1vyu5lr5rp.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;在 cmd 中使用 &lt;code&gt;burpsuite&lt;/code&gt; 命令运行 Burp Suite&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744386519216.60ufhpobuf.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744385371172.73u4slk5pw.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -1023,6 +992,185 @@
     &lt;a href=&#34;#5%e5%ae%9e%e9%aa%8c%e5%88%86%e6%9e%90-2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;h3&gt;四、单臂路由访问互联网&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;四单臂路由访问互联网&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#%e5%9b%9b%e5%8d%95%e8%87%82%e8%b7%af%e7%94%b1%e8%ae%bf%e9%97%ae%e4%ba%92%e8%81%94%e7%bd%91&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h3&gt;五、三层交换技术访问互联网&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;五三层交换技术访问互联网&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#%e4%ba%94%e4%b8%89%e5%b1%82%e4%ba%a4%e6%8d%a2%e6%8a%80%e6%9c%af%e8%ae%bf%e9%97%ae%e4%ba%92%e8%81%94%e7%bd%91&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Burp Suite</title>
+      <link>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/burp-suite/</link>
+      <pubDate>Fri, 11 Apr 2025 19:06:08 +0800</pubDate>
+      
+      <guid>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/burp-suite/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;一、Java 环境的配置&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;一java-环境的配置&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e4%b8%80java-%e7%8e%af%e5%a2%83%e7%9a%84%e9%85%8d%e7%bd%ae&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200&#34;&gt;
+  &lt;p class=&#34;hx-flex hx-items-center hx-font-medium&#34;&gt;&lt;svg height=16px class=&#34;hx-inline-block hx-align-middle hx-mr-2&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;Note&lt;/p&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;&lt;p&gt;Burp Suite 是一个基于 Java 开发的应用程序，因此需要配置 Java 环境来执行其代码。&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;下载链接：&lt;a href=&#34;https://www.oracle.com/cn/java/technologies/downloads/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Oracle Java&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;下载 Windows 版本的 JDK&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/image.9nzz4z8iki.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将 JDK 的压缩包解压到任意指定的目录（以 D:\Program Files\Java 为例）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744372720740.4joafpmxa8.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744372788610.3gol4tseha.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置环境变量&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;新建系统变量 &lt;code&gt;JAVA_HOME&lt;/code&gt; （以 D:\Program Files\Java\jdk-24 为例）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744373044169.77dqq2mugh.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编辑系统环境变量 Path，添加 &lt;code&gt;%JAVA_HOME%\bin&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744373101150.45vagilgq.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;验证 Java 环境&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;java -version&lt;/code&gt; 检查 Java 版本&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;javac -version&lt;/code&gt; 检查 Java 编译器版本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744376999793.6m433u99tk.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;二、Burp Suite 的安装&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;二burp-suite-的安装&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e4%ba%8cburp-suite-%e7%9a%84%e5%ae%89%e8%a3%85&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;下载链接：&lt;a href=&#34;https://portswigger.net/burp/releases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Burp Suite&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;下载 JAR 版本的 Burp Suite&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744378175830.51ec4dx3mn.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下载 BurpLoaderKeygen&lt;/p&gt;
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-amber-200 hx-bg-amber-100 hx-text-amber-900 dark:hx-border-amber-200/30 dark:hx-bg-amber-900/30 dark:hx-text-amber-200&#34;&gt;
+  &lt;p class=&#34;hx-flex hx-items-center hx-font-medium&#34;&gt;&lt;svg height=16px class=&#34;hx-inline-block hx-align-middle hx-mr-2&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;Warning&lt;/p&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;&lt;p&gt;由于涉及到版权问题，该软件请在 Github 或 Bing 等网站自行搜索下载，仅供学习和交流使用，商业使用请购买正版软件！&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将下载的 Burp Suite 和 BurpLoaderKeygen 放在任意指定的目录（以 D:\Program Files\burpsuite_pro 为例）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744384976457.39ld9n27sq.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;启动 BurpLoaderKeygen 加载器（在 D:\Program Files\burpsuite_pro 目录）&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;java&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-jar&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;BurpLoaderKeygen&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;jar&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744472686180.5mnzs91e6k.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;配置 BurpLoaderKeygen 加载器&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;勾选 &lt;code&gt;Auto Run&lt;/code&gt;，下次打开 BurpLoaderKeygen 时会自动运行 Burp Suite&lt;/li&gt;
+&lt;li&gt;任意修改 &lt;code&gt;License Text&lt;/code&gt;（可选，以 licensed to Hailo 为例）&lt;/li&gt;
+&lt;li&gt;复制 License 的内容&lt;/li&gt;
+&lt;li&gt;点击 Run 运行 Burp Suite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744385165274.5xatjzv94r.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;激活 Burp Suite&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;点击 Next 跳过 License Agreement&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744382589175.b9365fhad.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将之前复制 License 的内容粘贴到 License Key&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744385245782.5j4dt4my9p.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;选择手动激活 Manual activation&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744385266254.3k872shfy6.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;复制 request&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744385287177.8z6pl7wlbz.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;粘贴到 BurpLoaderKeygen 的 Activation Request 并复制 Activation Response&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744385313072.9gwr9sxyww.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;粘贴到 Burp Suite 的 response&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744389817132.102cq6qp1a.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;成功激活&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744385332124.8adg1792bl.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;优化 Burp Suite 的启动&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;新建 &lt;code&gt;burpsuite.bat&lt;/code&gt; 文件并放到 Burp Suite 的同级目录下&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java -jar &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\Program Files\burpsuite_pro\BurpLoaderKeygen.jar&amp;#34;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744386453453.2yyjghmzna.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将 &lt;code&gt;D:\Program Files\burpsuite_pro&lt;/code&gt; 添加到系统环境变量&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744386152557.1vyu5lr5rp.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 cmd 中使用 &lt;code&gt;burpsuite&lt;/code&gt; 命令运行 Burp Suite&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744386519216.60ufhpobuf.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744385371172.73u4slk5pw.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Sqli Labs 通关攻略</title>
+      <link>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/sqli-labs-%E9%80%9A%E5%85%B3%E6%94%BB%E7%95%A5/</link>
+      <pubDate>Mon, 14 Apr 2025 16:20:36 +0800</pubDate>
+      
+      <guid>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/sqli-labs-%E9%80%9A%E5%85%B3%E6%94%BB%E7%95%A5/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;一、Page-1&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;一page-1&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e4%b8%80page-1&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
       </description>
     </item>
     
