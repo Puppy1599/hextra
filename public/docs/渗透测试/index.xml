@@ -5,7 +5,7 @@
     <description>Recent content in 渗透测试 on 摸鱼小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 14 Apr 2025 16:20:36 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 15 Apr 2025 14:44:28 +0800</lastBuildDate>
     
 	  <atom:link href="http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     
@@ -47,6 +47,26 @@
       <pubDate>Mon, 14 Apr 2025 16:20:36 +0800</pubDate>
       
       <guid>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/</guid>
+      <description>
+        
+        
+        &lt;p&gt;这是 &lt;code&gt;渗透测试&lt;/code&gt; 部分的概述内容&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose&#34; style=&#34;--hextra-cards-grid-cols: 3;&#34;&gt;
+&lt;a
+  class=&#34;hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900&#34;href=&#34;%e5%9f%ba%e6%9c%ac%e6%b5%81%e7%a8%8b&#34;
+    &gt;&lt;span class=&#34;hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50&#34;&gt;&lt;svg t=&#34;1744542229653&#34; class=&#34;icon&#34; viewBox=&#34;0 0 1024 1024&#34; version=&#34;1.1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; p-id=&#34;9036&#34; width=&#34;24&#34; height=&#34;24&#34;&gt;&lt;path d=&#34;M510.207177 286.360248c61.620491 0 111.573808-49.953317 111.573808-111.573808 0-61.620491-49.953317-111.573808-111.573808-111.573808-61.620491 0-111.572784 49.953317-111.572784 111.573808 0 61.620491 49.953317 111.573808 111.572784 111.573808z m0-167.218904c30.682772 0 55.64612 24.962324 55.646119 55.64612 0 30.682772-24.962324 55.64612-55.646119 55.646119-30.682772 0-55.645096-24.962324-55.645096-55.646119s24.962324-55.64612 55.645096-55.64612zM174.697362 582.563105c-61.620491 0-111.573808 49.953317-111.573808 111.573808 0 61.620491 49.953317 111.573808 111.573808 111.573807S286.27117 755.757403 286.27117 694.136913c-0.001024-61.620491-49.953317-111.573808-111.573808-111.573808z m0 167.218903c-30.682772 0-55.64612-24.962324-55.64612-55.646119 0-30.682772 24.962324-55.64612 55.64612-55.64612s55.64612 24.962324 55.64612 55.64612c-0.001024 30.683795-24.963348 55.64612-55.64612 55.646119zM845.950438 582.563105c-61.620491 0-111.573808 49.953317-111.573808 111.573808 0 61.620491 49.953317 111.573808 111.573808 111.573807s111.573808-49.953317 111.573807-111.573807c0-61.620491-49.953317-111.573808-111.573807-111.573808z m0 167.218903c-30.683795 0-55.64612-24.962324-55.64612-55.646119 0-30.682772 24.962324-55.64612 55.64612-55.64612 30.682772 0 55.64612 24.962324 55.646119 55.64612s-24.963348 55.64612-55.646119 55.646119zM509.424928 879.615787c-79.713568 0-157.405987-27.895756-218.755147-78.525861l-35.610732 43.119906c71.35764 58.904123 161.694018 91.333643 254.364856 91.333643 93.463324 0 184.400723-32.934295 256.044027-92.726127l-35.82882-42.92844c-61.620491 51.408258-139.818708 79.726879-220.214184 79.726879zM853.375654 535.665062h55.927688c0-154.825796-90.704977-297.157118-231.098085-362.601821l-23.622058 50.684371c120.758059 56.310621 198.792455 178.734542 198.792455 311.91745zM364.266658 223.747612l-23.622058-50.684371c-140.379797 65.444702-231.084775 207.777049-231.084775 362.601821h55.927688c0-133.182908 78.034396-255.621162 198.779145-311.91745z&#34; fill=&#34;#3E3A39&#34; p-id=&#34;9037&#34;&gt;&lt;/path&gt;&lt;/svg&gt;基本流程&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>XSS</title>
+      <link>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/xss/</link>
+      <pubDate>Tue, 15 Apr 2025 14:44:28 +0800</pubDate>
+      
+      <guid>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/xss/</guid>
       <description>
         
         

@@ -11,6 +11,7 @@ sidebar:
 {{< cards >}}
 {{< card link="sql-注入" title="SQL 注入" icon="sql-injection" >}}
 {{< card link="环境配置" title="环境配置" icon="environment-configuration" >}}
+{{< card link="XSS" title="XSS" icon="hack-attack" >}}
 {{< /cards >}}
 
 

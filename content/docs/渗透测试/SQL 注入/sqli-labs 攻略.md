@@ -1,5 +1,5 @@
 ---
-title: 'Sqli Labs 通关攻略'
+title: 'Sqli Labs 攻略'
 date: '2025-04-14T16:20:36+08:00'
 weight: 
 draft: false

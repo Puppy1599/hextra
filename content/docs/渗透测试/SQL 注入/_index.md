@@ -10,4 +10,5 @@ sidebar:
 
 {{< cards >}}
 {{< card link="基本流程" title="基本流程" icon="process" >}}
+{{< card link="sqli-labs-攻略" title="sqli-labs 攻略" icon="sql-injection2" >}}
 {{< /cards >}}
