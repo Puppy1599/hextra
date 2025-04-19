@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>摸鱼小窝 – Cisco PT 实验</title>
-    <link>https://example.org/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/</link>
+    <link>http://localhost:1313/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/</link>
     <description>Recent content in Cisco PT 实验 on 摸鱼小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
     <lastBuildDate>Tue, 08 Apr 2025 15:42:07 +0800</lastBuildDate>
     
-	  <atom:link href="https://example.org/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,10 +17,10 @@
     
     <item>
       <title>VLAN 基础配置</title>
-      <link>https://example.org/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/vlan-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</link>
+      <link>http://localhost:1313/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/vlan-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Wed, 02 Apr 2025 22:54:21 +0800</pubDate>
       
-      <guid>https://example.org/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/vlan-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</guid>
+      <guid>http://localhost:1313/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/vlan-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</guid>
       <description>
         
         
@@ -416,10 +416,10 @@
     
     <item>
       <title>跨 VLAN 通信</title>
-      <link>https://example.org/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/%E8%B7%A8-vlan-%E9%80%9A%E4%BF%A1/</link>
+      <link>http://localhost:1313/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/%E8%B7%A8-vlan-%E9%80%9A%E4%BF%A1/</link>
       <pubDate>Tue, 08 Apr 2025 15:42:07 +0800</pubDate>
       
-      <guid>https://example.org/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/%E8%B7%A8-vlan-%E9%80%9A%E4%BF%A1/</guid>
+      <guid>http://localhost:1313/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/%E8%B7%A8-vlan-%E9%80%9A%E4%BF%A1/</guid>
       <description>
         
         

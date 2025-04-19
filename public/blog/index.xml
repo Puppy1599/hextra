@@ -1,13 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>摸鱼小窝 – 博客</title>
-    <link>https://example.org/blog/</link>
+    <link>http://localhost:1313/blog/</link>
     <description>Recent content in 博客 on 摸鱼小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 12 Apr 2025 22:25:15 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 19 Apr 2025 22:43:05 +0800</lastBuildDate>
     
-	  <atom:link href="https://example.org/blog/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -17,10 +17,10 @@
     
     <item>
       <title>终端命令</title>
-      <link>https://example.org/blog/debian-linux/%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4/</link>
+      <link>http://localhost:1313/blog/debian-linux/%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Sat, 12 Apr 2025 18:21:11 +0800</pubDate>
       
-      <guid>https://example.org/blog/debian-linux/%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4/</guid>
+      <guid>http://localhost:1313/blog/debian-linux/%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4/</guid>
       <description>
         
         
@@ -143,11 +143,71 @@
     </item>
     
     <item>
+      <title>西电 CTF 终端 WSRX</title>
+      <link>http://localhost:1313/blog/newstar-ctf-2024/%E8%A5%BF%E7%94%B5-ctf-%E7%BB%88%E7%AB%AF-wsrx/</link>
+      <pubDate>Sat, 19 Apr 2025 22:43:05 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/newstar-ctf-2024/%E8%A5%BF%E7%94%B5-ctf-%E7%BB%88%E7%AB%AF-wsrx/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;一、WSRX 的下载与安装&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;一wsrx-的下载与安装&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e4%b8%80wsrx-%e7%9a%84%e4%b8%8b%e8%bd%bd%e4%b8%8e%e5%ae%89%e8%a3%85&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;下载地址：&lt;/strong&gt;&lt;a href=&#34;https://github.com/XDSEC/WebSocketReflectorX&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WebSocketReflectorX&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;二、添加到环境变量&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;二添加到环境变量&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e4%ba%8c%e6%b7%bb%e5%8a%a0%e5%88%b0%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;D:\Application\WebSocketReflectorX&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;三、编写 bat 脚本&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;三编写-bat-脚本&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e4%b8%89%e7%bc%96%e5%86%99-bat-%e8%84%9a%e6%9c%ac&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;以 &lt;code&gt;wsrx_ctf.bat&lt;/code&gt; 为例，放在 &lt;code&gt;D:\Application\WebSocketReflectorX&lt;/code&gt; 目录：&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;@echo off
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chcp &lt;span class=&#34;m&#34;&gt;65001&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; /p &lt;span class=&#34;nv&#34;&gt;wsrx&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;请输入 WSRX 地址：
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; link: 127.0.0.1:3307
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wsrx.exe connect %wsrx% --host 127.0.0.1 --port &lt;span class=&#34;m&#34;&gt;3307&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Week1 Web 网络攻防</title>
+      <link>http://localhost:1313/blog/newstar-ctf-2024/week1-web-%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2/</link>
+      <pubDate>Sat, 19 Apr 2025 17:50:42 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/newstar-ctf-2024/week1-web-%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;headach3&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;headach3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#headach3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+      </description>
+    </item>
+    
+    <item>
       <title>系统配置</title>
-      <link>https://example.org/blog/debian-linux/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</link>
+      <link>http://localhost:1313/blog/debian-linux/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sat, 12 Apr 2025 22:25:15 +0800</pubDate>
       
-      <guid>https://example.org/blog/debian-linux/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</guid>
+      <guid>http://localhost:1313/blog/debian-linux/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</guid>
       <description>
         
         
@@ -413,6 +473,90 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Anaconda 的常用命令</title>
+      <link>http://localhost:1313/blog/python/anaconda-%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sat, 19 Apr 2025 17:17:46 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/python/anaconda-%E7%9A%84%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>实用应用程序</title>
+      <link>http://localhost:1313/blog/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/%E5%AE%9E%E7%94%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/</link>
+      <pubDate>Sat, 19 Apr 2025 16:06:54 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/%E5%AE%9E%E7%94%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://pixpin.cn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PixPin&lt;/a&gt;&lt;/strong&gt;：强大且免费的截图贴图工具&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Anaconda 的安装与配置</title>
+      <link>http://localhost:1313/blog/python/anaconda-%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sat, 19 Apr 2025 15:54:12 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/python/anaconda-%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;一、Anaconda 的下载与安装&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;一anaconda-的下载与安装&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e4%b8%80anaconda-%e7%9a%84%e4%b8%8b%e8%bd%bd%e4%b8%8e%e5%ae%89%e8%a3%85&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;下载地址：&lt;/strong&gt;&lt;a href=&#34;https://www.anaconda.com/download/success&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Anaconda&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/Python/PixPin_2025-04-19_16-48-49.6ikhhaiy04.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h3&gt;二、添加到环境变量&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;二添加到环境变量&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e4%ba%8c%e6%b7%bb%e5%8a%a0%e5%88%b0%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;D:\Application\anaconda3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;D:\Application\anaconda3\Scripts
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;D:\Application\anaconda3\Library\bin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;D:\Application\anaconda3\Library\mingw-w64\bin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;D:\Application\anaconda3\Library\usr\bin&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3&gt;三、Pycharm 添加解释器&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;三pycharm-添加解释器&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e4%b8%89pycharm-%e6%b7%bb%e5%8a%a0%e8%a7%a3%e9%87%8a%e5%99%a8&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/Python/PixPin_2025-04-19_17-13-21.2a5a7hppgs.webp&#34; alt=&#34;&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>http://localhost:1313/blog/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/github/</link>
+      <pubDate>Sat, 19 Apr 2025 11:50:07 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/github/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/BewlyBewly/BewlyBewly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BewlyBewly&lt;/a&gt;&lt;/strong&gt;：优化 bilibili 网站界面的浏览器插件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/guozhigq/pilipala&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pilipala&lt;/a&gt;&lt;/strong&gt;：开源的 bilibili 第三方客户端&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/bitepeng/b0pass&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;b0pass&lt;/a&gt;&lt;/strong&gt;：基于Go语言的高性能 &amp;ldquo;手机电脑超大文件传输神器&amp;rdquo;、&amp;ldquo;局域网共享文件服务器&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/shadow1ng/fscan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fscan&lt;/a&gt;&lt;/strong&gt;：内网安全扫描工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/beeware/toga&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;toga&lt;/a&gt;&lt;/strong&gt;：轻松打造原生桌面应用的 Python 框架&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>

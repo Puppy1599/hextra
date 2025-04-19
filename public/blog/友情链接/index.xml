@@ -1,0 +1,55 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>摸鱼小窝 – 友情链接</title>
+    <link>http://localhost:1313/blog/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</link>
+    <description>Recent content in 友情链接 on 摸鱼小窝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 19 Apr 2025 16:06:54 +0800</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/blog/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>实用应用程序</title>
+      <link>http://localhost:1313/blog/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/%E5%AE%9E%E7%94%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/</link>
+      <pubDate>Sat, 19 Apr 2025 16:06:54 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/%E5%AE%9E%E7%94%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://pixpin.cn/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PixPin&lt;/a&gt;&lt;/strong&gt;：强大且免费的截图贴图工具&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Github</title>
+      <link>http://localhost:1313/blog/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/github/</link>
+      <pubDate>Sat, 19 Apr 2025 11:50:07 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/github/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/BewlyBewly/BewlyBewly&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;BewlyBewly&lt;/a&gt;&lt;/strong&gt;：优化 bilibili 网站界面的浏览器插件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/guozhigq/pilipala&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pilipala&lt;/a&gt;&lt;/strong&gt;：开源的 bilibili 第三方客户端&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/bitepeng/b0pass&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;b0pass&lt;/a&gt;&lt;/strong&gt;：基于Go语言的高性能 &amp;ldquo;手机电脑超大文件传输神器&amp;rdquo;、&amp;ldquo;局域网共享文件服务器&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/shadow1ng/fscan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fscan&lt;/a&gt;&lt;/strong&gt;：内网安全扫描工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/beeware/toga&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;toga&lt;/a&gt;&lt;/strong&gt;：轻松打造原生桌面应用的 Python 框架&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

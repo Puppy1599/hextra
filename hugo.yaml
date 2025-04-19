@@ -30,12 +30,15 @@ menu:
     - name: 关于
       pageRef: /about
       weight: 3
-    - name: 搜索
+    - name: 日志
+      pageRef: /logs
       weight: 4
+    - name: 搜索
+      weight: 5
       params:
         type: search
     - name: GitHub
-      weight: 5
+      weight: 6
       url: "https://github.com/Puppy1599"
       params:
         icon: github-customer
