@@ -62,10 +62,10 @@
     
     <item>
       <title>终端命令</title>
-      <link>http://localhost:1313/blog/debian-linux/%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4/</link>
+      <link>http://localhost:1313/blog/kali-linux/%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Sat, 12 Apr 2025 18:21:11 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/debian-linux/%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4/</guid>
+      <guid>http://localhost:1313/blog/kali-linux/%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4/</guid>
       <description>
         
         
@@ -368,10 +368,10 @@
     
     <item>
       <title>系统配置</title>
-      <link>http://localhost:1313/blog/debian-linux/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</link>
+      <link>http://localhost:1313/blog/kali-linux/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sat, 12 Apr 2025 22:25:15 +0800</pubDate>
       
-      <guid>http://localhost:1313/blog/debian-linux/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</guid>
+      <guid>http://localhost:1313/blog/kali-linux/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</guid>
       <description>
         
         
@@ -637,6 +637,210 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Week2 Web 网络攻防</title>
+      <link>http://localhost:1313/blog/newstar-ctf-2024/week2-web-%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2/</link>
+      <pubDate>Wed, 23 Apr 2025 20:32:27 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/newstar-ctf-2024/week2-web-%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2/</guid>
+      <description>
+        
+        
+        &lt;h2&gt;遗失的拉链&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;遗失的拉链&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e9%81%97%e5%a4%b1%e7%9a%84%e6%8b%89%e9%93%be&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;提示：Pangbai 的拉链找不到了 你可以帮他找到他的拉链吗&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;根据提示拉链应该与 &lt;code&gt;zip&lt;/code&gt; 有关，这里说拉链找不到了，可以使用 dirsearch 进行目录扫描查找与 &lt;code&gt;zip&lt;/code&gt; 相关的内容&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;python dirsearch.py -u 127.0.0.1:3307&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;扫描结果：&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  _&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;. _ _  _  _  _ _&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;_    v0.4.3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;_&lt;span class=&#34;o&#34;&gt;||&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; _&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;/_&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;_&lt;span class=&#34;o&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;_&lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Extensions: php, aspx, jsp, html, js &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; HTTP method: GET &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; Threads: &lt;span class=&#34;m&#34;&gt;25&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; Wordlist size: &lt;span class=&#34;m&#34;&gt;11460&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Output File: C:&lt;span class=&#34;se&#34;&gt;\U&lt;/span&gt;sers&lt;span class=&#34;se&#34;&gt;\p&lt;/span&gt;uppy&lt;span class=&#34;se&#34;&gt;\D&lt;/span&gt;esktop&lt;span class=&#34;se&#34;&gt;\d&lt;/span&gt;irsearch-0.4.3&lt;span class=&#34;se&#34;&gt;\r&lt;/span&gt;eports&lt;span class=&#34;se&#34;&gt;\_&lt;/span&gt;127.0.0.1_3307&lt;span class=&#34;se&#34;&gt;\_&lt;/span&gt;25-04-24_09-08-17.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Target: http://127.0.0.1:3307/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:18&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; Starting:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; -  276B  - /.ht_wsr.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; -  276B  - /.htaccess.save
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; -  276B  - /.htaccess.sample
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; -  276B  - /.htaccess.orig
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; -  276B  - /.htaccess.bak1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; -  276B  - /.htaccess_extra
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; -  276B  - /.htaccessBAK
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; -  276B  - /.htaccess_orig
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; -  276B  - /.htaccess_sc
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; -  276B  - /.htaccessOLD2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; -  276B  - /.htaccessOLD
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; -  276B  - /.html
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; -  276B  - /.htm
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; -  276B  - /.htpasswd_test
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; -  276B  - /.httr-oauth
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;403&lt;/span&gt; -  276B  - /.htpasswds
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:08:58&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;200&lt;/span&gt; -  861B  - /index.html
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:09:17&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;200&lt;/span&gt; -    3KB - /server-status/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:09:17&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;200&lt;/span&gt; -    3KB - /server-status
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;09:09:32&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;200&lt;/span&gt; -    1KB - /www.zip
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Task Completed&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>PHP 正则表达式的绕过</title>
+      <link>http://localhost:1313/blog/php/php-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E7%BB%95%E8%BF%87/</link>
+      <pubDate>Wed, 23 Apr 2025 19:58:08 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/php/php-%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E7%BB%95%E8%BF%87/</guid>
+      <description>
+        
+        
+        &lt;h3&gt;示例一&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;示例一&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#%e7%a4%ba%e4%be%8b%e4%b8%80&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$cmd&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_POST&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;cmd&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;preg_match&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/cat|flag/i&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$cmd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;die&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;u can not do this &amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;eval&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$cmd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;代码审计：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;从 HTTP 请求的 POST 方法获取数据，并将名为 &lt;code&gt;cmd&lt;/code&gt; 的字段的值赋给变量 &lt;code&gt;$cmd&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;使用正则表达式匹配 &lt;code&gt;$cmd&lt;/code&gt; 中的 &lt;code&gt;cat&lt;/code&gt; 和 &lt;code&gt;flag&lt;/code&gt;，修饰符 &lt;code&gt;i&lt;/code&gt;（case-insensitive）表示不区分大小写&lt;/li&gt;
+&lt;li&gt;如果匹配成功就终止脚本执行，并输出消息 &lt;code&gt;&amp;quot;u can not do this &amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;如果匹配失败就使用 &lt;code&gt;eval($cmd)&lt;/code&gt; 执行 PHP 代码，并输出执行结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;需求：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;查找 &lt;code&gt;flag&lt;/code&gt; 文件位置：&lt;code&gt;find / -iname flag&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;查看 &lt;code&gt;falg&lt;/code&gt; 文件内容：&lt;code&gt;cat /flag&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;解决方法：&lt;/strong&gt; &lt;code&gt;$(command)&lt;/code&gt; 命令替换&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$(...)&lt;/code&gt; 是 Shell 中命令替换的语法，它允许在一个命令中执行另一个命令，并将该命令的输出作为结果返回嵌入到其他命令中&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;find / -iname fla&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; g&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ca&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; t&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt; /fla&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; g&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Requests</title>
+      <link>http://localhost:1313/blog/python/requests/</link>
+      <pubDate>Wed, 23 Apr 2025 15:04:24 +0800</pubDate>
+      
+      <guid>http://localhost:1313/blog/python/requests/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-blue-200 hx-bg-blue-100 hx-text-blue-900 dark:hx-border-blue-200/30 dark:hx-bg-blue-900/30 dark:hx-text-blue-200&#34;&gt;
+  &lt;p class=&#34;hx-flex hx-items-center hx-font-medium&#34;&gt;&lt;svg height=16px class=&#34;hx-inline-block hx-align-middle hx-mr-2&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;Note&lt;/p&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;&lt;p&gt;&lt;strong&gt;官方文档：&lt;/strong&gt;&lt;a href=&#34;https://requests.readthedocs.io/en/latest/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Requests&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Main Interface&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;main-interface&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#main-interface&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;可以通过以下方法访问请求的所有功能，它们都会返回一个 Response 对象&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;requests.request(method, url, **kwargs)&lt;/code&gt;：构造并发送请求&lt;/p&gt;
+&lt;p&gt;参数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;method：新请求对象的方法（GET、OPTIONS、HEAD、POST、PUT、PATCH 或 DELETE）&lt;/li&gt;
+&lt;li&gt;url：新请求对象的 URL&lt;/li&gt;
+&lt;li&gt;params：(可选）字典，在请求的查询字符串中要发送的元组或字节列表&lt;/li&gt;
+&lt;li&gt;data：(可选）要在请求正文中发送的字典、元组列表、字节或类文件对象&lt;/li&gt;
+&lt;li&gt;json：(可选）在请求正文中发送的 JSON 可序列化 Python 对象&lt;/li&gt;
+&lt;li&gt;headers：(可选）与请求一起发送的 HTTP 请求头信息字典&lt;/li&gt;
+&lt;li&gt;cookies： (可选）与请求一起发送的 Dict 或 CookieJar 对象&lt;/li&gt;
+&lt;li&gt;files：(可选）用于多部分编码上传的 &lt;code&gt;&#39;name&#39;: file-like-objects&lt;/code&gt;（或 &lt;code&gt;{&#39;name&#39;: file-tuple}&lt;/code&gt;）字典。&lt;code&gt;file-tuple&lt;/code&gt; 可以是 2 元组 &lt;code&gt;(&#39;filename&#39;、fileobj)&lt;/code&gt;、3 元组 &lt;code&gt;(&#39;filename&#39;、fileobj、&#39;content_type&#39;)&lt;/code&gt; 或 4 元组 &lt;code&gt;(&#39;filename&#39;、fileobj、&#39;content_type&#39;、custom_headers)&lt;/code&gt;，其中&lt;code&gt;content_type&lt;/code&gt;是定义给定文件内容类型的字符串，&lt;code&gt;custom_headers&lt;/code&gt; 是包含要为文件添加的附加标头的类字典对象&lt;/li&gt;
+&lt;li&gt;timeout(float or tuple)： (可选）等待服务器发送数据多少秒后放弃，用浮点数或（连接超时、读取超时）元组表示。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Request Sessions&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;request-sessions&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#request-sessions&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;code&gt;class requests.Session&lt;/code&gt;（请求会话， 提供 cookie 持久性、连接池和配置）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1、基础用法&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;requests&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;session&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;requests&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Session&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;session&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;https://www.example.com&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;2、常用方法&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;get(url, **kwargs)&lt;/code&gt;：发送 GET 请求，返回 Response 对象&lt;/p&gt;
+&lt;p&gt;参数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;url：新请求对象的 URL&lt;/li&gt;
+&lt;li&gt;**kwargs：&lt;code&gt;request&lt;/code&gt; 接收的可选参数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;post(url, data=None, json=None, **kwargs)&lt;/code&gt;：发送 POST 请求，返回 Response 对象&lt;/p&gt;
+&lt;p&gt;参数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;url：新请求对象的 URL&lt;/li&gt;
+&lt;li&gt;data：(可选）要在请求正文中发送的字典、元组列表、字节或类文件对象&lt;/li&gt;
+&lt;li&gt;json：(可选）在请求正文中发送的 json&lt;/li&gt;
+&lt;li&gt;**kwargs：&lt;code&gt;request&lt;/code&gt; 接收的可选参数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;patch(url, data=None, **kwargs)&lt;/code&gt;：发送 PATCH 请求，返回 Response 对象&lt;/p&gt;
+&lt;p&gt;参数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;url：新请求对象的 URL&lt;/li&gt;
+&lt;li&gt;data：(可选）要在请求正文中发送的字典、元组列表、字节或类文件对象&lt;/li&gt;
+&lt;li&gt;**kwargs：&lt;code&gt;request&lt;/code&gt; 接收的可选参数&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>

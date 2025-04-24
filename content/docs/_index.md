@@ -14,4 +14,5 @@ title: "文档"
 {{< card link="渗透测试" title="渗透测试" icon="pentest" >}}
 {{< card link="php" title="PHP" icon="php" >}}
 {{< card link="web-架构安全" title="Web 架构安全" icon="web" >}}
+{{< card link="红队工具" title="红队工具" icon="red-team" >}}
 {{< /cards >}}

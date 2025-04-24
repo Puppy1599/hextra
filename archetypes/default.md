@@ -3,5 +3,5 @@ title: '{{ replace .File.ContentBaseName "-" " " | title }}'
 date: '{{ .Date }}'
 weight: 
 draft: false
-description: ""
+description: '{{ replace .File.ContentBaseName "-" " " | title }}'
 ---

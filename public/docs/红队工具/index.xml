@@ -1,0 +1,32 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>摸鱼小窝 – 红队工具</title>
+    <link>http://localhost:1313/docs/%E7%BA%A2%E9%98%9F%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 红队工具 on 摸鱼小窝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 23 Apr 2025 20:49:08 +0800</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/docs/%E7%BA%A2%E9%98%9F%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Dirsearch</title>
+      <link>http://localhost:1313/docs/%E7%BA%A2%E9%98%9F%E5%B7%A5%E5%85%B7/dirsearch/</link>
+      <pubDate>Wed, 23 Apr 2025 20:49:08 +0800</pubDate>
+      
+      <guid>http://localhost:1313/docs/%E7%BA%A2%E9%98%9F%E5%B7%A5%E5%85%B7/dirsearch/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>
