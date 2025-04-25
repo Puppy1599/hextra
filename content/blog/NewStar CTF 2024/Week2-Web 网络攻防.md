@@ -53,3 +53,39 @@ Target: http://127.0.0.1:3307/
 
 Task Completed
 ```
+
+访问 `127.0.0.1:3307/www.zip`，下载解压后得到 `pizwww.php`
+
+```php
+<?php
+error_reporting(0);
+//for fun
+if(isset($_GET['new'])&&isset($_POST['star'])){
+    if(sha1($_GET['new'])===md5($_POST['star'])&&$_GET['new']!==$_POST['star']){
+        //欸 为啥sha1和md5相等呢
+        $cmd = $_POST['cmd'];
+        if (preg_match("/cat|flag/i", $cmd)) {
+            die("u can not do this ");
+        }
+        echo eval($cmd);
+    }else{
+        echo "Wrong";
+
+    } 
+}
+```
+```mermaid
+flowchart LR
+  A@{ shape: stadium, label: "开始" } --> B@{ shape: rounded, label: "关闭错误报告" }
+  B --> C@{ shape: diamond, label: "设置参数 new 和 star" }
+  C -->|是| D@{ shape: diamond, label: "(sha1(new) == md5(star)) && (new != star)" }
+  C -->|否| E@{ shape: stadium, label: "结束" }
+  D -->  F@{ shape: rounded, label: "$cmd" }
+  F --> G
+```
+代码审计：
+- `error_reporting(0);`：关闭错误报告
+- 判断是否通过 GET 方法和 POST 方法分别传入参数 `new` 和 `star`
+  - TRUE，继续判断 `new` 的 sha1 哈希值和 `star` 的 md5 哈希值是否相等并且 `new` 和 `star` 的内容不同
+    - FALSE，输出 `Wrong`
+    - TRUE，将 POST 方法传入的参数 `cmd` 值赋给变量 `$cmd`

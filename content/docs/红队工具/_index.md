@@ -8,5 +8,6 @@ sidebar:
 
 {{< cards >}}
 {{< card link="dirsearch" title="dirsearch" icon="dir-search" >}}
+{{< card link="githacker" title="GitHacker" icon="git-hacker" >}}
 {{< /cards >}}
 
