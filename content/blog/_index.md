@@ -1,5 +1,6 @@
 ---
 title: "博客"
+comments: false
 ---
 
 <div style="text-align: center; margin-top: 1em;">

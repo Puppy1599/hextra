@@ -1,9 +1,10 @@
 ---
 title: "红队工具"
 type: docs
-weight: 
+weight: 5
 sidebar:
   open: false
+comments: false
 ---
 
 {{< cards >}}

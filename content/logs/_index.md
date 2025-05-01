@@ -4,6 +4,7 @@ draft: false
 width: wide
 cascade:
   type: blog
+comments: false
 ---
 
 # 博客更新日志 (Blog Changelog)

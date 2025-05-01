@@ -5,7 +5,7 @@
     <description>Recent content in 渗透测试 on 摸鱼小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 15 Apr 2025 14:44:28 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 28 Apr 2025 17:02:52 +0800</lastBuildDate>
     
 	  <atom:link href="http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     
@@ -78,6 +78,25 @@
 &lt;a
   class=&#34;hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900&#34;href=&#34;portswigger-%e6%94%bb%e7%95%a5&#34;
     &gt;&lt;span class=&#34;hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50&#34;&gt;&lt;svg t=&#34;1744699178309&#34; class=&#34;icon&#34; viewBox=&#34;0 0 1024 1024&#34; version=&#34;1.1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; p-id=&#34;6976&#34; width=&#34;24&#34; height=&#34;24&#34;&gt;&lt;path d=&#34;M0 0h1024v1024H0z&#34; fill=&#34;#FF6633&#34; p-id=&#34;6977&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M552.004267 880.731022h-80.031289v-117.623466l107.838578-131.6864h-107.838578v-159.903289h-195.356445l195.356445-238.569245V143.223467h80.031289v117.623466l-107.838578 131.6864h107.838578v159.903289h195.356444l-195.356444 238.569245z&#34; fill=&#34;#FFFFFF&#34; p-id=&#34;6978&#34;&gt;&lt;/path&gt;&lt;/svg&gt;PortSwigger 攻略&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>任意文件上传</title>
+      <link>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</link>
+      <pubDate>Mon, 28 Apr 2025 17:02:52 +0800</pubDate>
+      
+      <guid>http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose&#34; style=&#34;--hextra-cards-grid-cols: 3;&#34;&gt;
+&lt;a
+  class=&#34;hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900&#34;href=&#34;upload-labs-%e6%94%bb%e7%95%a5&#34;
+    &gt;&lt;span class=&#34;hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50&#34;&gt;&lt;svg t=&#34;1745830748208&#34; class=&#34;icon&#34; viewBox=&#34;0 0 1024 1024&#34; version=&#34;1.1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; p-id=&#34;4782&#34; width=&#34;24&#34; height=&#34;24&#34;&gt;&lt;path d=&#34;M529.664 213.3504H896c23.552 0 42.6496 19.0976 42.6496 42.6496v597.3504c0 23.552-19.0976 42.6496-42.6496 42.6496h-768a42.6496 42.6496 0 0 1-42.6496-42.6496V170.6496c0-23.552 19.0976-42.6496 42.6496-42.6496h316.3136l85.3504 85.3504z m-359.0144 0v597.2992h682.7008v-512H494.336L408.9856 213.3504H170.6496z m384 341.2992v170.7008H469.3504v-170.7008h-128L512 384l170.6496 170.6496h-128z&#34; fill=&#34;#0183FF&#34; p-id=&#34;4783&#34;&gt;&lt;/path&gt;&lt;/svg&gt;upload labs 攻略&lt;/span&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 

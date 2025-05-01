@@ -121,3 +121,13 @@ description: ""
     ![](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744386519216.60ufhpobuf.webp)
 
     ![](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/QQ_1744385371172.73u4slk5pw.webp)
+
+### 三、光标偏移错位修复
+
+**方法 1：** 设置 => Message editor => 字体（黑体 16pt）
+
+![PixPin_2025-05-01_11-35-30](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-01_11-35-30.pfjou0meq.webp)
+
+**方法 2：** 设置 => Display => 勾选配置缩放设置（缩放比例 1.0）=> 重启 BurpSuite
+
+![PixPin_2025-05-01_11-23-13](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-01_11-23-13.sz5mjc5d5.webp)

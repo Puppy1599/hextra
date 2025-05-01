@@ -1,12 +1,11 @@
 ---
 title: "Cisco PT 实验"
 type: docs
-weight: 
+weight: 1
 sidebar:
   open: false
+comments: false
 ---
-
-这是 `Cisco PT 实验` 部分的概述内容...
 
 ## 🚀 快速入口
 

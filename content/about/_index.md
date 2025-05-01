@@ -5,6 +5,7 @@ draft: false
 width: wide
 cascade:
   type: blog
+comments: false
 ---
 
 ![我的头像](/favicon-96x96.png)

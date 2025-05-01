@@ -4,6 +4,7 @@ type: docs
 weight: 3
 sidebar:
   open: false
+comments: false
 ---
 
 这是 `渗透测试` 部分的概述内容...
