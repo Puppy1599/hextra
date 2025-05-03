@@ -186,7 +186,7 @@
 &lt;h2&gt;Pass-03&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pass-03&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#pass-03&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;排除客户端 &lt;code&gt;JavaScript&lt;/code&gt; 检查，上传非图片内容、图片后缀的文件 &lt;code&gt;fish.jpg&lt;/code&gt; 成功，判断为 &lt;strong&gt;检查后缀&lt;/strong&gt; 类型&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp&#34; alt=&#34;PixPin_2025-04-28_22-59-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;上传任意后缀文件 &lt;code&gt;fish.fish&lt;/code&gt; 上传成功，判断为 &lt;strong&gt;黑名单&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;上传任意后缀文件 &lt;code&gt;fish.fish&lt;/code&gt; 成功，判断为 &lt;strong&gt;黑名单&lt;/strong&gt; 类型&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_16-18-51.1ovmzfab2l.webp&#34; alt=&#34;PixPin_2025-04-29_16-18-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;尝试上传特殊可解析后缀&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;将 &lt;code&gt;fish.php&lt;/code&gt; 的后缀名修改为 &lt;code&gt;.php5&lt;/code&gt; 进行上传，上传成功&lt;/p&gt;
@@ -201,7 +201,7 @@
 &lt;h2&gt;Pass-04&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pass-04&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#pass-04&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;排除客户端 &lt;code&gt;JavaScript&lt;/code&gt; 检查，上传非图片内容、图片后缀的文件 &lt;code&gt;fish.jpg&lt;/code&gt; 成功，判断为 &lt;strong&gt;检查后缀&lt;/strong&gt; 类型&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp&#34; alt=&#34;PixPin_2025-04-28_22-59-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;上传任意后缀文件 &lt;code&gt;fish.fish&lt;/code&gt; 上传成功，判断为 &lt;strong&gt;黑名单&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;上传任意后缀文件 &lt;code&gt;fish.fish&lt;/code&gt; 成功，判断为 &lt;strong&gt;黑名单&lt;/strong&gt; 类型&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_16-18-51.1ovmzfab2l.webp&#34; alt=&#34;PixPin_2025-04-29_16-18-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;上传特殊可解析后缀 &lt;code&gt;fish.php5&lt;/code&gt; 提示“此文件不允许上传”&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_17-49-51.8z6qakaxdl.webp&#34; alt=&#34;PixPin_2025-04-29_17-49-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
@@ -256,7 +256,7 @@
 &lt;h2&gt;Pass-05&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pass-05&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#pass-05&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;排除客户端 &lt;code&gt;JavaScript&lt;/code&gt; 检查，上传非图片内容、图片后缀的文件 &lt;code&gt;fish.jpg&lt;/code&gt; 成功，判断为 &lt;strong&gt;检查后缀&lt;/strong&gt; 类型&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp&#34; alt=&#34;PixPin_2025-04-28_22-59-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;上传任意后缀文件 &lt;code&gt;fish.fish&lt;/code&gt; 上传成功，判断为 &lt;strong&gt;黑名单&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;上传任意后缀文件 &lt;code&gt;fish.fish&lt;/code&gt; 成功，判断为 &lt;strong&gt;黑名单&lt;/strong&gt; 类型&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_16-18-51.1ovmzfab2l.webp&#34; alt=&#34;PixPin_2025-04-29_16-18-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;上传特殊可解析后缀 &lt;code&gt;fish.php5&lt;/code&gt; 提示“此文件不允许上传”&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_17-49-51.8z6qakaxdl.webp&#34; alt=&#34;PixPin_2025-04-29_17-49-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;

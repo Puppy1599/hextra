@@ -156,7 +156,7 @@ MIME (Multipurpose Internet Mail Extensions) 多用途互联网邮件扩展是�
 
 ![PixPin_2025-04-28_22-59-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp)
 
-上传任意后缀文件 `fish.fish` 上传成功，判断为 **黑名单** 类型
+上传任意后缀文件 `fish.fish` 成功，判断为 **黑名单** 类型
 
 ![PixPin_2025-04-29_16-18-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_16-18-51.1ovmzfab2l.webp)
 
@@ -175,7 +175,7 @@ MIME (Multipurpose Internet Mail Extensions) 多用途互联网邮件扩展是�
 
 ![PixPin_2025-04-28_22-59-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp)
 
-上传任意后缀文件 `fish.fish` 上传成功，判断为 **黑名单** 类型
+上传任意后缀文件 `fish.fish` 成功，判断为 **黑名单** 类型
 
 ![PixPin_2025-04-29_16-18-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_16-18-51.1ovmzfab2l.webp)
 
@@ -225,7 +225,7 @@ DocumentRoot  "C:\phpStudy\WWW"
 
 ![PixPin_2025-04-28_22-59-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp)
 
-上传任意后缀文件 `fish.fish` 上传成功，判断为 **黑名单** 类型
+上传任意后缀文件 `fish.fish` 成功，判断为 **黑名单** 类型
 
 ![PixPin_2025-04-29_16-18-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_16-18-51.1ovmzfab2l.webp)
 
