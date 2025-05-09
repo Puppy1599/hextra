@@ -10,22 +10,24 @@
 <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
-<title>任意文件上传 – 摸鱼小窝</title>
-  <meta name="description" content="upload labs 攻略" /><link rel="canonical" href="http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" itemprop="url" />
+<title>[第五空间 2021]WebFTP – 摸鱼小窝</title>
+  <meta name="description" content="[第五空间 2021]WebFTP" /><link rel="canonical" href="http://localhost:1313/blog/ctf-write-up/%E7%AC%AC%E4%BA%94%E7%A9%BA%E9%97%B4-2021webftp/" itemprop="url" />
 
-<meta property="og:title" content="任意文件上传" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/" />
+<meta property="og:title" content="[第五空间 2021]WebFTP" />
+<meta property="og:description" content="[第五空间 2021]WebFTP" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/blog/ctf-write-up/%E7%AC%AC%E4%BA%94%E7%A9%BA%E9%97%B4-2021webftp/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2025-05-09T21:09:59+08:00" />
+<meta property="article:modified_time" content="2025-05-09T21:09:59+08:00" />
 
-  <meta itemprop="name" content="任意文件上传">
-  <meta itemprop="description" content="upload labs 攻略">
-  <meta itemprop="datePublished" content="2025-04-28T17:02:52+08:00">
-  <meta itemprop="dateModified" content="2025-04-28T17:02:52+08:00">
-  <meta itemprop="wordCount" content="3">
+  <meta itemprop="name" content="[第五空间 2021]WebFTP">
+  <meta itemprop="description" content="[第五空间 2021]WebFTP">
+  <meta itemprop="datePublished" content="2025-05-09T21:09:59+08:00">
+  <meta itemprop="dateModified" content="2025-05-09T21:09:59+08:00">
+  <meta itemprop="wordCount" content="541">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="任意文件上传">
-  <meta name="twitter:description" content="upload labs 攻略">
+  <meta name="twitter:title" content="[第五空间 2021]WebFTP">
+  <meta name="twitter:description" content="[第五空间 2021]WebFTP">
 
     <link href="/css/compiled/main.css" rel="stylesheet" />
 
@@ -71,14 +73,14 @@
             title="文档"
             href="/docs"
             
-            class="hx-text-sm contrast-more:hx-text-gray-700 contrast-more:dark:hx-text-gray-100 hx-relative -hx-ml-2 hx-hidden hx-whitespace-nowrap hx-p-2 md:hx-inline-block hx-font-medium"
+            class="hx-text-sm contrast-more:hx-text-gray-700 contrast-more:dark:hx-text-gray-100 hx-relative -hx-ml-2 hx-hidden hx-whitespace-nowrap hx-p-2 md:hx-inline-block hx-text-gray-600 hover:hx-text-gray-800 dark:hx-text-gray-400 dark:hover:hx-text-gray-200"
           >
             <span class="hx-text-center">文档</span>
           </a><a
             title="博客"
             href="/blog"
             
-            class="hx-text-sm contrast-more:hx-text-gray-700 contrast-more:dark:hx-text-gray-100 hx-relative -hx-ml-2 hx-hidden hx-whitespace-nowrap hx-p-2 md:hx-inline-block hx-text-gray-600 hover:hx-text-gray-800 dark:hx-text-gray-400 dark:hover:hx-text-gray-200"
+            class="hx-text-sm contrast-more:hx-text-gray-700 contrast-more:dark:hx-text-gray-100 hx-relative -hx-ml-2 hx-hidden hx-whitespace-nowrap hx-p-2 md:hx-inline-block hx-font-medium"
           >
             <span class="hx-text-center">博客</span>
           </a><a
@@ -124,9 +126,9 @@
   </nav>
 </div>
 
-  <div class='hx-mx-auto hx-flex hx-max-w-screen-xl'>
+  <div class="hx-mx-auto hx-flex hx-max-w-screen-xl">
     <div class="mobile-menu-overlay [transition:background-color_1.5s_ease] hx-fixed hx-inset-0 hx-z-10 hx-bg-black/80 dark:hx-bg-black/60 hx-hidden"></div>
-<aside class="sidebar-container hx-flex hx-flex-col print:hx-hidden md:hx-top-16 md:hx-shrink-0 md:hx-w-64 md:hx-self-start max-md:[transform:translate3d(0,-100%,0)] md:hx-sticky">
+<aside class="sidebar-container hx-flex hx-flex-col print:hx-hidden md:hx-top-16 md:hx-shrink-0 md:hx-w-64 md:hx-self-start max-md:[transform:translate3d(0,-100%,0)] md:hx-hidden xl:hx-block">
   
   <div class="hx-px-4 hx-pt-4 md:hx-hidden">
     <div class="search-wrapper hx-relative md:hx-w-64">
@@ -158,7 +160,7 @@
     <ul class="hx-flex hx-flex-col hx-gap-1 md:hx-hidden">
       
       
-          <li class=""><a
+          <li class="open"><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/blog/"
@@ -266,7 +268,7 @@
       </div>
             </li></ul>
       </div>
-            </li><li class="hx-flex hx-flex-col "><a
+            </li><li class="hx-flex hx-flex-col open"><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/blog/ctf-write-up/"
@@ -318,13 +320,14 @@
   >[HCTF 2018]WarmUp
     </a>
               
-            </li><li class="hx-flex hx-flex-col "><a
+            </li><li class="hx-flex hx-flex-col open"><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+      sidebar-active-item hx-bg-primary-100 hx-font-semibold hx-text-primary-800 contrast-more:hx-border contrast-more:hx-border-primary-500 dark:hx-bg-primary-400/10 dark:hx-text-primary-600 contrast-more:dark:hx-border-primary-500"
     href="/blog/ctf-write-up/%E7%AC%AC%E4%BA%94%E7%A9%BA%E9%97%B4-2021webftp/"
     
   >[第五空间 2021]WebFTP
     </a>
+  
               
             </li><li class="hx-flex hx-flex-col "><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
@@ -470,7 +473,7 @@
     
   >关于
     </a></li>
-          <li class="open"><a
+          <li class=""><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/docs/"
@@ -559,7 +562,7 @@
               
             </li></ul>
       </div>
-            </li><li class="hx-flex hx-flex-col open"><a
+            </li><li class="hx-flex hx-flex-col "><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
       hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"
@@ -649,15 +652,14 @@
               
             </li></ul>
       </div>
-            </li><li class="hx-flex hx-flex-col open"><a
+            </li><li class="hx-flex hx-flex-col "><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      sidebar-active-item hx-bg-primary-100 hx-font-semibold hx-text-primary-800 contrast-more:hx-border contrast-more:hx-border-primary-500 dark:hx-bg-primary-400/10 dark:hx-text-primary-600 contrast-more:dark:hx-border-primary-500"
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
     href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"
     
   >任意文件上传
         <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
     </a>
-  
               <div class="ltr:hx-pr-0 hx-overflow-hidden">
         <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
     class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
@@ -718,241 +720,7 @@
     
     </ul>
 
-    <ul class="hx-flex hx-flex-col hx-gap-1 max-md:hx-hidden">
-        
-          <li class=""><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/"
-    
-  >Cisco PT 实验
-        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
-    </a><div class="ltr:hx-pr-0 hx-overflow-hidden">
-        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/vlan-%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/"
-    
-  >VLAN 基础配置
-    </a>
-              
-            </li><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/cisco-pt-%E5%AE%9E%E9%AA%8C/%E8%B7%A8-vlan-%E9%80%9A%E4%BF%A1/"
-    
-  >跨 VLAN 通信
-    </a>
-              
-            </li></ul>
-      </div></li>
-          <li class=""><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/php-%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/"
-    
-  >PHP 代码审计
-        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
-    </a><div class="ltr:hx-pr-0 hx-overflow-hidden">
-        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/php-%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/"
-    
-  >流程控制
-    </a>
-              
-            </li><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/php-%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/%E8%BF%90%E7%AE%97%E7%AC%A6/"
-    
-  >运算符
-    </a>
-              
-            </li><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/php-%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/%E5%B8%B8%E9%87%8F/"
-    
-  >常量
-    </a>
-              
-            </li></ul>
-      </div></li>
-          <li class=""><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/web-%E6%9E%B6%E6%9E%84%E5%AE%89%E5%85%A8/"
-    
-  >Web 架构安全
-        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
-    </a><div class="ltr:hx-pr-0 hx-overflow-hidden">
-        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/web-%E6%9E%B6%E6%9E%84%E5%AE%89%E5%85%A8/web-%E6%9E%B6%E6%9E%84%E8%A7%A3%E6%9E%90/"
-    
-  >Web 架构解析
-    </a>
-              
-            </li></ul>
-      </div></li>
-          <li class="open"><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"
-    
-  >渗透测试
-        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
-    </a><div class="ltr:hx-pr-0 hx-overflow-hidden">
-        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"
-    
-  >环境配置
-        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
-    </a>
-              <div class="ltr:hx-pr-0 hx-overflow-hidden">
-        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/%E9%9D%B6%E5%9C%BA%E9%83%A8%E7%BD%B2/"
-    
-  >靶场部署
-    </a>
-              
-            </li><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95/"
-    
-  >浏览器扩展
-    </a>
-              
-            </li><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/burp-suite/"
-    
-  >Burp Suite
-    </a>
-              
-            </li></ul>
-      </div>
-            </li><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/"
-    
-  >SQL 注入
-        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
-    </a>
-              <div class="ltr:hx-pr-0 hx-overflow-hidden">
-        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/%E5%9F%BA%E6%9C%AC%E6%B5%81%E7%A8%8B/"
-    
-  >基本流程
-    </a>
-              
-            </li><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/sql-%E6%B3%A8%E5%85%A5/sqli-labs-%E6%94%BB%E7%95%A5/"
-    
-  >Sqli Labs 攻略
-    </a>
-              
-            </li></ul>
-      </div>
-            </li><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/xss/"
-    
-  >XSS
-        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
-    </a>
-              <div class="ltr:hx-pr-0 hx-overflow-hidden">
-        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/xss/portswigger-%E6%94%BB%E7%95%A5/"
-    
-  >PortSwigger 攻略
-    </a>
-              
-            </li></ul>
-      </div>
-            </li><li class="hx-flex hx-flex-col open"><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      sidebar-active-item hx-bg-primary-100 hx-font-semibold hx-text-primary-800 contrast-more:hx-border contrast-more:hx-border-primary-500 dark:hx-bg-primary-400/10 dark:hx-text-primary-600 contrast-more:dark:hx-border-primary-500"
-    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/"
-    
-  >任意文件上传
-        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
-    </a>
-              <div class="ltr:hx-pr-0 hx-overflow-hidden">
-        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0/upload-labs-%E6%94%BB%E7%95%A5/"
-    
-  >Upload Labs 攻略
-    </a>
-              
-            </li></ul>
-      </div>
-            </li></ul>
-      </div></li>
-          <li class=""><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/%E7%BA%A2%E9%98%9F%E5%B7%A5%E5%85%B7/"
-    
-  >红队工具
-        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
-    </a><div class="ltr:hx-pr-0 hx-overflow-hidden">
-        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/%E7%BA%A2%E9%98%9F%E5%B7%A5%E5%85%B7/githacker/"
-    
-  >GitHacker
-    </a>
-              
-            </li><li class="hx-flex hx-flex-col "><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/docs/%E7%BA%A2%E9%98%9F%E5%B7%A5%E5%85%B7/dirsearch/"
-    
-  >Dirsearch
-    </a>
-              
-            </li></ul>
-      </div></li>
-        
-      <li class="[word-break:break-word] hx-mt-5 hx-mb-2 hx-px-2 hx-py-1.5 hx-text-sm hx-font-semibold hx-text-gray-900 first:hx-mt-0 dark:hx-text-gray-100">
-        <span class="hx-cursor-default">更多</span>
-      </li>
-    <li><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="/about"
-    
-  >关于</a></li>
-    <li><a
-    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
-      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
-    href="https://gohugo.io/documentation/"
-    target="_blank" rel="noreferrer"
-  >Hugo 文档 ↗</a></li>
-    
-      </ul>
-    </div>
+    <div class="max-xl:hx-hidden hx-h-0 hx-w-64 hx-shrink-0"></div></div>
   
   </aside>
     
@@ -975,29 +743,193 @@
         
   <div class="hx-mt-1.5 hx-flex hx-items-center hx-gap-1 hx-overflow-hidden hx-text-sm hx-text-gray-500 dark:hx-text-gray-400 contrast-more:hx-text-current">
         <div class="hx-whitespace-nowrap hx-transition-colors hx-min-w-[24px] hx-overflow-hidden hx-text-ellipsis hover:hx-text-gray-900 dark:hover:hx-text-gray-100">
-          <a href="/docs/">文档</a>
+          <a href="/blog/">博客</a>
         </div><svg class="hx-w-3.5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
         <div class="hx-whitespace-nowrap hx-transition-colors hx-min-w-[24px] hx-overflow-hidden hx-text-ellipsis hover:hx-text-gray-900 dark:hover:hx-text-gray-100">
-          <a href="/docs/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/">渗透测试</a>
-        </div><svg class="hx-w-3.5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx-whitespace-nowrap hx-transition-colors hx-font-medium hx-text-gray-700 contrast-more:hx-font-bold contrast-more:hx-text-current dark:hx-text-gray-100 contrast-more:dark:hx-text-current">任意文件上传</div>
+          <a href="/blog/ctf-write-up/">CTF Write Up</a>
+        </div><svg class="hx-w-3.5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx-whitespace-nowrap hx-transition-colors hx-font-medium hx-text-gray-700 contrast-more:hx-font-bold contrast-more:hx-text-current dark:hx-text-gray-100 contrast-more:dark:hx-text-current">[第五空间 2021]WebFTP</div>
   </div>
 
+        <h1 class="hx-mt-2 hx-text-4xl hx-font-bold hx-tracking-tight hx-text-slate-900 dark:hx-text-slate-100">[第五空间 2021]WebFTP</h1>
+        <div class="hx-mt-4 hx-mb-16 hx-text-gray-500 hx-text-sm hx-flex hx-items-center hx-flex-wrap hx-gap-y-2"><span class="hx-mr-1">May 9, 2025</span></div>
         <div class="content">
-          <h1>任意文件上传</h1>
-          <div class="hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose" style="--hextra-cards-grid-cols: 3;">
-<a
-  class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="upload-labs-%e6%94%bb%e7%95%a5"
-    ><span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-p-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50"><svg t="1745830748208" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4782" width="24" height="24"><path d="M529.664 213.3504H896c23.552 0 42.6496 19.0976 42.6496 42.6496v597.3504c0 23.552-19.0976 42.6496-42.6496 42.6496h-768a42.6496 42.6496 0 0 1-42.6496-42.6496V170.6496c0-23.552 19.0976-42.6496 42.6496-42.6496h316.3136l85.3504 85.3504z m-359.0144 0v597.2992h682.7008v-512H494.336L408.9856 213.3504H170.6496z m384 341.2992v170.7008H469.3504v-170.7008h-128L512 384l170.6496 170.6496h-128z" fill="#0183FF" p-id="4783"></path></svg>upload labs 攻略</span></a>
+          <p>使用 dirsearch 扫描，发现 <code>/phpinfo.php </code></p>
+<div class="hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code">
+
+<div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">┌──<span class="o">(</span>hailo㉿kali-Hailo<span class="o">)</span>-<span class="o">[</span>~<span class="o">]</span>
+</span></span><span class="line"><span class="cl">└─$ dirsearch -u <span class="s1">&#39;http://node4.anna.nssctf.cn:28342/?m=login&amp;a=in&#39;</span>                          
+</span></span><span class="line"><span class="cl">/usr/lib/python3/dist-packages/dirsearch/dirsearch.py:23: DeprecationWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html
+</span></span><span class="line"><span class="cl">  from pkg_resources import DistributionNotFound, VersionConflict
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  _<span class="p">|</span>. _ _  _  _  _ _<span class="p">|</span>_    v0.4.3                                                                             
+</span></span><span class="line"><span class="cl"> <span class="o">(</span>_<span class="o">||</span><span class="p">|</span> _<span class="o">)</span> <span class="o">(</span>/_<span class="o">(</span>_<span class="o">||</span> <span class="o">(</span>_<span class="p">|</span> <span class="o">)</span>                                                                                      
+</span></span><span class="line"><span class="cl">                                                                                                             
+</span></span><span class="line"><span class="cl">Extensions: php, aspx, jsp, html, js <span class="p">|</span> HTTP method: GET <span class="p">|</span> Threads: <span class="m">25</span> <span class="p">|</span> Wordlist size: <span class="m">11460</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Output File: /home/hailo/reports/http_node4.anna.nssctf.cn_28342/__25-05-02_10-32-14.txt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Target: http://node4.anna.nssctf.cn:28342/
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:14<span class="o">]</span> Starting:                                                                                         
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">301</span> -  335B  - /.git  -&gt;  http://node4.anna.nssctf.cn:28342/.git/
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -  415B  - /.git/branches/                                   
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -  306B  - /.git/config                                      
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -  623B  - /.git/
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -   73B  - /.git/description
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -   23B  - /.git/HEAD
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -  658B  - /.git/hooks/                                      
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -  464B  - /.git/info/                                       
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -  240B  - /.git/info/exclude                                
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -  173B  - /.git/logs/HEAD                                   
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">301</span> -  345B  - /.git/logs/refs  -&gt;  http://node4.anna.nssctf.cn:28342/.git/logs/refs/
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">301</span> -  351B  - /.git/logs/refs/heads  -&gt;  http://node4.anna.nssctf.cn:28342/.git/logs/refs/heads/
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -  488B  - /.git/logs/
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -  173B  - /.git/logs/refs/heads/master
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -  173B  - /.git/logs/refs/remotes/origin/HEAD
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -  566B  - /.git/objects/
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">301</span> -  353B  - /.git/logs/refs/remotes  -&gt;  http://node4.anna.nssctf.cn:28342/.git/logs/refs/remotes/
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">301</span> -  360B  - /.git/logs/refs/remotes/origin  -&gt;  http://node4.anna.nssctf.cn:28342/.git/logs/refs/remotes/origin/
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -   41B  - /.git/refs/heads/master
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -  114B  - /.git/packed-refs
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -  481B  - /.git/refs/
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -   33KB - /.git/index
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">301</span> -  346B  - /.git/refs/heads  -&gt;  http://node4.anna.nssctf.cn:28342/.git/refs/heads/
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">301</span> -  348B  - /.git/refs/remotes  -&gt;  http://node4.anna.nssctf.cn:28342/.git/refs/remotes/
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">301</span> -  355B  - /.git/refs/remotes/origin  -&gt;  http://node4.anna.nssctf.cn:28342/.git/refs/remotes/origin/
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">200</span> -   32B  - /.git/refs/remotes/origin/HEAD
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">301</span> -  345B  - /.git/refs/tags  -&gt;  http://node4.anna.nssctf.cn:28342/.git/refs/tags/
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">403</span> -  301B  - /.ht_wsr.txt                                      
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">403</span> -  304B  - /.htaccess.bak1                                   
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">403</span> -  304B  - /.htaccess.orig
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">403</span> -  306B  - /.htaccess.sample                                 
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">403</span> -  304B  - /.htaccess.save
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">403</span> -  302B  - /.htaccess_sc                                     
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">403</span> -  304B  - /.htaccess_orig
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">403</span> -  303B  - /.htaccessOLD2
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">403</span> -  305B  - /.htaccess_extra
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">403</span> -  302B  - /.htaccessOLD                                     
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">403</span> -  302B  - /.htaccessBAK                                     
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">403</span> -  294B  - /.htm                                             
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">403</span> -  295B  - /.html                                            
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">403</span> -  300B  - /.htpasswds                                       
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">403</span> -  304B  - /.htpasswd_test
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:21<span class="o">]</span> <span class="m">403</span> -  301B  - /.httr-oauth                                      
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:22<span class="o">]</span> <span class="m">403</span> -  295B  - /.php3                                            
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:22<span class="o">]</span> <span class="m">403</span> -  294B  - /.php                                             
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  298B  - /cgi-bin/                                         
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  306B  - /cgi-bin/awstats/                                 
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  316B  - /cgi-bin/a1stats/a1disp.cgi
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  308B  - /cgi-bin/awstats.pl
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  309B  - /cgi-bin/htimage.exe?2,2
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  308B  - /cgi-bin/htmlscript
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  308B  - /cgi-bin/index.html
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  310B  - /cgi-bin/imagemap.exe?2,2
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  303B  - /cgi-bin/login                                    
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  307B  - /cgi-bin/login.php
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  315B  - /cgi-bin/mt7/mt-xmlrpc.cgi
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  307B  - /cgi-bin/mt/mt.cgi
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  307B  - /cgi-bin/login.cgi
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  311B  - /cgi-bin/mt-xmlrpc.cgi
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  308B  - /cgi-bin/mt7/mt.cgi
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  305B  - /cgi-bin/php.ini
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  306B  - /cgi-bin/printenv
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  309B  - /cgi-bin/ViewLog.asp
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  304B  - /cgi-bin/mt.cgi
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  309B  - /cgi-bin/printenv.pl
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  306B  - /cgi-bin/test-cgi
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  306B  - /cgi-bin/test.cgi
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:32<span class="o">]</span> <span class="m">403</span> -  314B  - /cgi-bin/mt/mt-xmlrpc.cgi                         
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:40<span class="o">]</span> <span class="m">200</span> -   10KB - /LICENSE                                          
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:41<span class="o">]</span> <span class="m">200</span> -   14KB - /logo                                             
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:44<span class="o">]</span> <span class="m">200</span> -   18KB - /phpinfo.php                                      
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:46<span class="o">]</span> <span class="m">200</span> -    3KB - /README.md                                        
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:46<span class="o">]</span> <span class="m">301</span> -  337B  - /Readme  -&gt;  http://node4.anna.nssctf.cn:28342/Readme/
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:47<span class="o">]</span> <span class="m">403</span> -  303B  - /server-status                                    
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:47<span class="o">]</span> <span class="m">403</span> -  304B  - /server-status/                                   
+</span></span><span class="line"><span class="cl"><span class="o">[</span>10:32:52<span class="o">]</span> <span class="m">200</span> -   33KB - /upload                                           
+</span></span><span class="line"><span class="cl">                                                                             
+</span></span><span class="line"><span class="cl">Task Completed</span></span></code></pre></div></div><div class="hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0">
+  <button
+    class="hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50"
+    title="Copy code"
+  >
+    <div class="copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4"></div>
+    <div class="success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4"></div>
+  </button>
 </div>
+</div>
+<p>发现 <code>flag</code>：<code>NSSCTF{ffb4dc5b-e235-4bb6-b4e2-9db5036124cb}</code></p>
+<p><img src="https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-02_10-32-41.7snf5tbbpw.webp" alt="PixPin_2025-05-02_10-32-41" loading="lazy" /></p>
 
-
-        </div>
-        <div class="hx-mt-16"></div>
-        
-        
+        </div><div class="hx-mt-16"></div><div class="hx-mb-8 hx-flex hx-items-center hx-border-t hx-pt-8 dark:hx-border-neutral-800 contrast-more:hx-border-neutral-400 dark:contrast-more:hx-border-neutral-400 print:hx-hidden"><a
+        href="/blog/ctf-write-up/actf2020-%E6%96%B0%E7%94%9F%E8%B5%9Binclude/"
+        title="[ACTF2020 新生赛]Include"
+        class="hx-flex hx-max-w-[50%] hx-items-center hx-gap-1 hx-py-4 hx-text-base hx-font-medium hx-text-gray-600 hx-transition-colors [word-break:break-word] hover:hx-text-primary-600 dark:hx-text-gray-300 md:hx-text-lg ltr:hx-pr-4 rtl:hx-pl-4"
+      ><svg class="hx-inline hx-h-5 hx-shrink-0 ltr:hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>[ACTF2020 新生赛]Include</a><a
+        href="/blog/ctf-write-up/hctf-2018warmup/"
+        title="[HCTF 2018]WarmUp"
+        class="hx-flex hx-max-w-[50%] hx-items-center hx-gap-1 hx-py-4 hx-text-base hx-font-medium hx-text-gray-600 hx-transition-colors [word-break:break-word] hover:hx-text-primary-600 dark:hx-text-gray-300 md:hx-text-lg ltr:hx-ml-auto ltr:hx-pl-4 ltr:hx-text-right rtl:hx-mr-auto rtl:hx-pr-4 rtl:hx-text-left"
+      >[HCTF 2018]WarmUp<svg class="hx-inline hx-h-5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div><script>
   
 
-      </main>
+  function getHugoTheme() {
+    return localStorage.getItem("color-theme");
+  }
+  
+  function getGiscusTheme() {
+    let giscusTheme = "preferred_color_scheme";
+    if(getHugoTheme() == 'light') {
+      return giscusTheme.replace('dark', 'light');
+    } else {
+      return giscusTheme.replace('light', 'dark');
+    }
+  }
+
+  function setGiscusTheme() {
+    function sendMessage(message) {
+      const iframe = document.querySelector('iframe.giscus-frame');
+      if (!iframe) return;
+      iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+    }
+    sendMessage({
+      setConfig: {
+        theme: getGiscusTheme(),
+      },
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const giscusAttributes = {
+      "src": "https://giscus.app/client.js",
+      "data-repo": "Puppy1599\/hextra",
+      "data-repo-id": "R_kgDOOYDwpg",
+      "data-category": "Announcements",
+      "data-category-id": "DIC_kwDOOYDwps4Cpqc7",
+      "data-mapping": "pathname",
+      "data-strict": "0",
+      "data-reactions-enabled": "1",
+      "data-emit-metadata": "0",
+      "data-input-position": "top",
+      "data-theme": getGiscusTheme(),
+      "data-lang": "zh-CN",
+      "crossorigin": "anonymous",
+      "async": "",
+    };
+
+    
+    const giscusScript = document.createElement("script");
+    Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
+    document.getElementById('giscus').appendChild(giscusScript);
+
+    
+    const toggles = document.querySelectorAll(".theme-toggle");
+    if (toggles) {
+      toggles.forEach(toggle => toggle.addEventListener('click', setGiscusTheme));
+    }
+  });
+</script>
+
+<div id="giscus"></div></main>
     </article>
   </div>
 

