@@ -14,12 +14,22 @@ description: "Anaconda 的安装与配置"
 
 ### 二、添加到环境变量
 
+**Anaconda：**
+
 ```text
 D:\Application\anaconda3
 D:\Application\anaconda3\Scripts
 D:\Application\anaconda3\Library\bin
 D:\Application\anaconda3\Library\mingw-w64\bin
 D:\Application\anaconda3\Library\usr\bin
+```
+
+**Miniconda：**
+
+```text
+D:\Application\miniconda3
+D:\Application\miniconda3\Library\bin
+D:\Application\miniconda3\Scripts
 ```
 
 ### 三、Pycharm 添加解释器

