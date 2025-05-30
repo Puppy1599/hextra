@@ -116,7 +116,7 @@ print('Success')
 
 https://github.com/Puppy1599/picx-images-hosting/raw/master/Typora/networkSecurity/PixPin_2025-05-16_23-23-55.wis6ehwd3.webp
 
-尝试使用焚靖绕过，获得 flag
+尝试使用焚靖绕过，获得 flag：`flag{b6773729-5580-cd57-458b-b05da97e978e}`
 
 https://github.com/Puppy1599/picx-images-hosting/raw/master/Typora/networkSecurity/PixPin_2025-05-16_23-26-08.1vyvjkncih.webp
 

